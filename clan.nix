@@ -5,6 +5,9 @@
   inventory.machines = {
     # Define machines here.
     # jon = { };
+    fovirbox = {
+      tags = [];
+    };
   };
 
   # Docs: See https://docs.clan.lol/reference/clanServices
@@ -52,5 +55,15 @@
     # jon = { config, ... }: {
     #   environment.systemPackages = [ pkgs.asciinema ];
     # };
+
+    fovirbox = {
+      config,
+      pkgs,
+      ...
+    }: {
+      users.users.root.openssh.authorizedKeys.keys = [
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBFvfwOrz294r8TnRxnoHFHdg0ZghU5JoXExPouLIrHp fovir@disroot.org"
+      ];
+    };
   };
 }
