@@ -21,7 +21,7 @@
         # Insert the public key that you want to use for SSH access.
         # All keys will have ssh access to all machines ("tags.all" means 'all machines').
         # Alternatively set 'users.users.root.openssh.authorizedKeys.keys' in each machine
-        "admin-machine-1" = "__YOUR_PUBLIC_KEY__";
+        "root" = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBFvfwOrz294r8TnRxnoHFHdg0ZghU5JoXExPouLIrHp fovir@disroot.org";
       };
     };
 
