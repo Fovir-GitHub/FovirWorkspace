@@ -1,6 +1,6 @@
 {
   # Ensure this is unique among all clans you want to use.
-  meta.name = "__CHANGE_ME__";
+  meta.name = "Fovir";
 
   inventory.machines = {
     # Define machines here.
