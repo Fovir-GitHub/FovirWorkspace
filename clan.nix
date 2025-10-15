@@ -9,12 +9,11 @@
 
   # Docs: See https://docs.clan.lol/reference/clanServices
   inventory.instances = {
-
     # Docs: https://docs.clan.lol/reference/clanServices/admin/
     # Admin service for managing machines
     # This service adds a root password and SSH access.
     admin = {
-      roles.default.tags.all = { };
+      roles.default.tags.all = {};
       roles.default.settings.allowedKeys = {
         # Insert the public key that you want to use for SSH access.
         # All keys will have ssh access to all machines ("tags.all" means 'all machines').
@@ -32,17 +31,17 @@
       # Replace with the name (string) of your machine that you will use as zerotier-controller
       # See: https://docs.zerotier.com/controller/
       # Deploy this machine first to create the network secrets
-      roles.controller.machines."__YOUR_CONTROLLER__" = { };
+      roles.controller.machines."__YOUR_CONTROLLER__" = {};
       # Peers of the network
       # tags.all means 'all machines' will joined
-      roles.peer.tags.all = { };
+      roles.peer.tags.all = {};
     };
 
     # Docs: https://docs.clan.lol/reference/clanServices/tor/
     # Tor network provides secure, anonymous connections to your machines
     # All machines will be accessible via Tor as a fallback connection method
     tor = {
-      roles.server.tags.nixos = { };
+      roles.server.tags.nixos = {};
     };
   };
 
