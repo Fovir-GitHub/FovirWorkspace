@@ -25,6 +25,24 @@
       };
     };
 
+    fovirbox-user = {
+      module.name = "users";
+
+      roles.default = {
+        tags.all = {};
+
+        settings = {
+          user = "fovir";
+          groups = [
+            "wheel"
+            "networkmanager"
+            "video"
+            "input"
+          ];
+        };
+      };
+    };
+
     # Docs: https://docs.clan.lol/reference/clanServices/zerotier/
     # The lines below will define a zerotier network and add all machines as 'peer' to it.
     # !!! Manual steps required:
