@@ -6,6 +6,7 @@
     # Define machines here.
     # jon = { };
     fovirbox = {
+      deploy.targetHost = "root@192.168.122.62";
       tags = [];
     };
   };
