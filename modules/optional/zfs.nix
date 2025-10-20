@@ -9,7 +9,7 @@ with lib; {
     zfs = {
       forceImportRoot = false;
       devNodes = "/dev/disk/by-path";
-      package = inputs.chaotic.x86_64-linux.zfs_cachyos;
+      package = inputs.chaotic.legacyPackages.x86_64-linux.zfs_cachyos;
     };
   };
   services.zfs = {
