@@ -4,7 +4,6 @@
 
   inventory.machines = {
     # Define machines here.
-    # jon = { };
     fovirbox = {
       deploy.targetHost = "root@192.168.122.61";
       tags = [];
@@ -13,37 +12,6 @@
 
   # Docs: See https://docs.clan.lol/reference/clanServices
   inventory.instances = {
-    # Docs: https://docs.clan.lol/reference/clanServices/admin/
-    # Admin service for managing machines
-    # This service adds a root password and SSH access.
-    admin = {
-      roles.default.tags.all = {};
-      roles.default.settings.allowedKeys = {
-        # Insert the public key that you want to use for SSH access.
-        # All keys will have ssh access to all machines ("tags.all" means 'all machines').
-        # Alternatively set 'users.users.root.openssh.authorizedKeys.keys' in each machine
-        "root" = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBFvfwOrz294r8TnRxnoHFHdg0ZghU5JoXExPouLIrHp fovir@disroot.org";
-      };
-    };
-
-    fovirbox-user = {
-      module.name = "users";
-
-      roles.default = {
-        tags.all = {};
-
-        settings = {
-          user = "fovir";
-          groups = [
-            "wheel"
-            "networkmanager"
-            "video"
-            "input"
-          ];
-        };
-      };
-    };
-
     # Docs: https://docs.clan.lol/reference/clanServices/zerotier/
     # The lines below will define a zerotier network and add all machines as 'peer' to it.
     # !!! Manual steps required:
@@ -64,25 +32,6 @@
     # All machines will be accessible via Tor as a fallback connection method
     tor = {
       roles.server.tags.nixos = {};
-    };
-  };
-
-  # Additional NixOS configuration can be added here.
-  # machines/jon/configuration.nix will be automatically imported.
-  # See: https://docs.clan.lol/guides/more-machines/#automatic-registration
-  machines = {
-    # jon = { config, ... }: {
-    #   environment.systemPackages = [ pkgs.asciinema ];
-    # };
-
-    fovirbox = {
-      config,
-      pkgs,
-      ...
-    }: {
-      users.users.root.openssh.authorizedKeys.keys = [
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBFvfwOrz294r8TnRxnoHFHdg0ZghU5JoXExPouLIrHp fovir@disroot.org"
-      ];
     };
   };
 }
