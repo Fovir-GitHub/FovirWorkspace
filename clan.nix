@@ -5,7 +5,7 @@
   inventory.machines = {
     # Define machines here.
     fovirbox = {
-      deploy.targetHost = ./machines/fovirbox/values/targethost.nix;
+      deploy.targetHost = import ./machines/fovirbox/values/targethost.nix;
       tags = [];
     };
   };
