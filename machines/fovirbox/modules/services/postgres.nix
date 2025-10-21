@@ -1,15 +1,12 @@
 {pkgs, ...}: {
   virtualisation.oci-containers.containers."postgres" = {
     image = "postgres";
-
     environment = import ../../values/postgres-environment.nix;
-
     volumes = [
       "postgres:/var/lib/postgresql/data:rw"
       "/etc/timezone:/etc/timezone"
       "/etc/localtime:/etc/localtime"
     ];
-
     ports = [
       "127.0.0.1:5432:5432"
     ];
