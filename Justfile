@@ -1,18 +1,18 @@
-encrypt input:
-  # Encrypt values of {{input}}.
-  ls ./machines/{{input}}/values/* | xargs -n 1 sops encrypt -i
+encrypt host:
+  # Encrypt values of {{host}}.
+  ls ./machines/{{host}}/values/* | xargs -n 1 sops encrypt -i
 
-decrypt input:
-  # Decrypt values of {{input}}.
-  ls ./machines/{{input}}/values/* | xargs -n 1 sops decrypt -i
+decrypt host:
+  # Decrypt values of {{host}}.
+  ls ./machines/{{host}}/values/* | xargs -n 1 sops decrypt -i
 
-vm input:
+vm host:
   # Build a VM.
-  just decrypt {{input}}
-  nixos-rebuild build-vm --flake .#{{input}}
-  just encrypt {{input}}
+  just decrypt {{host}}
+  nixos-rebuild build-vm --flake .#{{host}}
+  just encrypt {{host}}
 
-commit-values input:
+commit-values host:
   # Commit values automatically.
-  git add ./machines/{{input}}/values
+  git add ./machines/{{host}}/values
   git commit -m "chore: Encrypt values."
