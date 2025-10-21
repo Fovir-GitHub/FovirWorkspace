@@ -35,7 +35,10 @@
       ]
       (system: {
         default = clan-core.inputs.nixpkgs.legacyPackages.${system}.mkShell {
-          packages = [clan-core.packages.${system}.clan-cli];
+          packages = with clan-core.inputs.nixpkgs.legacyPackages.${system}; [
+            clan-core.packages.${system}.clan-cli
+            sops
+          ];
         };
       });
   };
