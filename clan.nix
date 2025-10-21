@@ -5,7 +5,7 @@
   inventory.machines = {
     # Define machines here.
     fovirbox = {
-      deploy.targetHost = "root@192.168.122.61";
+      deploy.targetHost = ./machines/fovirbox/values/targethost.nix;
       tags = [];
     };
   };
