@@ -38,6 +38,7 @@
           packages = with clan-core.inputs.nixpkgs.legacyPackages.${system}; [
             clan-core.packages.${system}.clan-cli
             sops
+            just
           ];
         };
       });
