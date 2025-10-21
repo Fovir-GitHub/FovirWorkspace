@@ -20,3 +20,7 @@ commit-values host:
 install host target:
   # Install machine {{host}} to {{target}}.
   clan machines install {{host}} --target-host {{target}}
+
+update host:
+  # Update machine configuration.
+  clan machines update {{host}}
