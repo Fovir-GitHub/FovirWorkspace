@@ -16,3 +16,7 @@ commit-values host:
   # Commit values automatically.
   git add ./machines/{{host}}/values
   git commit -m "chore: Encrypt values."
+
+install host target:
+  # Install machine {{host}} to {{target}}.
+  clan machines install {{host}} --target-host {{target}}
