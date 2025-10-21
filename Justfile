@@ -11,3 +11,8 @@ vm input:
   just decrypt {{input}}
   nixos-rebuild build-vm --flake .#{{input}}
   just encrypt {{input}}
+
+commit-values input:
+  # Commit values automatically.
+  git add ./machines/{{input}}/values
+  git commit -m "chore: Encrypt values."
