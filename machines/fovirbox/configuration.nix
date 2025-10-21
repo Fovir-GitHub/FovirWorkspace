@@ -6,6 +6,7 @@
 
   imports = [
     ./modules
+    ./services
     ../../modules/optional/zfs.nix
     ../../modules/optional/podman.nix
     ../../modules/shared
