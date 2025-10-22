@@ -1,6 +1,7 @@
 {lib, ...}: {
   networking = {
     useDHCP = lib.mkForce false;
+    firewall.enable = false;
     interfaces.ens3 = import ../values/interfaces.nix;
 
     defaultGateway = {
