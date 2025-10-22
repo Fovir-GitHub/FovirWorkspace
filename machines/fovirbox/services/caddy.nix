@@ -13,13 +13,13 @@
   services.caddy = {
     enable = true;
 
-    configFile = pkgs.writeText "Caddyfile" ''
-      {
-        auto_https disable_certs
-        servers {
-          max_header_size 10240MB
-        }
+    globalConfig = ''
+      auto_https disable_certs
+      servers {
+        max_header_size 10240MB
       }
     '';
+
+    virtualHosts = import ../values/caddy-virtual-hosts.nix;
   };
 }
