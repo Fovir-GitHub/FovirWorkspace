@@ -9,6 +9,9 @@
     ports = [
       "127.0.0.1:5432:5432"
     ];
+    networks = [
+      "postgres"
+    ];
   };
 
   systemd.services.auto-create-user-db = {
