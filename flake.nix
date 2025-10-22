@@ -9,7 +9,6 @@
     self,
     clan-core,
     nixpkgs,
-    chaotic,
     ...
   } @ inputs: let
     # Usage see: https://docs.clan.lol
@@ -39,6 +38,8 @@
             clan-core.packages.${system}.clan-cli
             sops
             just
+            alejandra
+            deadnix
           ];
         };
       });

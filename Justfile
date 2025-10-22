@@ -29,3 +29,8 @@ update host:
   git restore --staged .
   just encrypt {{host}}
   just commit-values {{host}}
+
+format:
+  # Use alejandra and deadnix to format code
+  deadnix -e
+  alejandra .
