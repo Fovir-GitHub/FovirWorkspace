@@ -1,6 +1,16 @@
 {lib, ...}:
 with lib; {
   nix = {
+    channel.enable = false;
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
+    };
+    optimise = {
+      automatic = true;
+      dates = ["weekly"];
+    };
     settings = {
       substituters = [
         "https://cache.nixos.org" # See https://nixos.wiki/wiki/Binary_Cache
