@@ -11,4 +11,6 @@
     ../../modules/optional/podman.nix
     ../../modules/shared
   ];
+
+  zramSwap.enable = true;
 }
