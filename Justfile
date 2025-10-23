@@ -9,8 +9,11 @@ decrypt host:
 vm host:
   # Build a VM.
   just decrypt {{host}}
+  git add --all
   nixos-rebuild build-vm --flake .#{{host}}
+  git restore --staged .
   just encrypt {{host}}
+  just commit-values {{host}}
 
 commit-values host:
   # Commit values automatically.
