@@ -23,7 +23,9 @@
       SuccessExitStatus = "0 1";
       ExecStart = ''
         ${pkgs.podman}/bin/podman exec -i postgres \
-        psql -U postgres
+        psql -U postgres \
+        -c "CREATE ROLE wakapi WITH LOGIN PASSWORD '${import ../values/wakapi-db-pwd.nix}';" \
+        -c "CREATE DATABASE wakapi OWNER wakapi;"
       '';
     };
   };
