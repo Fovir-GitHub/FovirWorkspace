@@ -8,5 +8,7 @@
       deploy.targetHost = "fovirbox";
       tags = [];
     };
+    foviros = {
+    };
   };
 }
