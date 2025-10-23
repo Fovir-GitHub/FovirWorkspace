@@ -1,5 +1,6 @@
 {
   imports = [
+    ./sci.nix
     ./radicale.nix
     ./umami.nix
     ./restic.nix
