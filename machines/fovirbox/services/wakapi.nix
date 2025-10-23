@@ -6,7 +6,7 @@
     ];
     environment = import ../values/wakapi-environment.nix;
     volumes = [
-      "wakapi:/data:rw"
+      "/var/lib/data/wakapi:/data:rw"
     ];
   };
 }
