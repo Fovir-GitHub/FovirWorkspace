@@ -6,12 +6,25 @@
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    disko.url = "github:nix-community/disko/latest";
+    disko.inputs.nixpkgs.follows = "nixpkgs";
+    nixvim = {
+      url = "github:Fovir-GitHub/nixvim";
+    };
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   outputs = {
     self,
     clan-core,
     nixpkgs,
+    home-manager,
+    nixvim,
+    chaotic,
+    disko,
+    nix-vscode-extensions,
     ...
   } @ inputs: let
     # Usage see: https://docs.clan.lol
