@@ -1,40 +1,40 @@
 {...}: {
   imports = [
-    ./leetcode.nix
-    ./cybu.nix
+    ./aerial.nix
+    ./bufferline.nix
     ./cmp-conventionalcommits.nix
-    ./gitsigns.nix
-    ./vim-matchup.nix
-    ./conform-nvim.nix
-    ./emmet.nix
-    ./mini.nix
-    ./dashboard.nix
-    ./lualine.nix
-    ./neogen.nix
-    ./ts-autotag.nix
-    ./guess-indent.nix
-    ./wakatime.nix
-    ./noice.nix
+    ./colorizer.nix
     ./comment.nix
+    ./conform-nvim.nix
+    ./cybu.nix
+    ./dashboard.nix
+    ./emmet.nix
+    ./gitsigns.nix
+    ./guess-indent.nix
+    ./hop.nix
+    ./indent-blankline.nix
+    ./leetcode.nix
+    ./lsp
+    ./lspsaga.nix
+    ./lualine.nix
+    ./luasnip.nix
+    ./markdown.nix
+    ./mini.nix
+    ./neo-tree.nix
+    ./neogen.nix
+    ./noice.nix
     ./nvim-autopairs.nix
     ./nvim-cmp.nix
     ./nvim-surround.nix
-    ./treesitter.nix
-    ./neo-tree.nix
-    ./web-devicons.nix
-    ./toggleterm.nix
-    ./lspsaga.nix
-    ./tmux-navigator.nix
-    ./markdown.nix
-    ./hop.nix
-    ./which-key.nix
-    ./luasnip.nix
-    ./telescope.nix
-    ./lsp
-    ./bufferline.nix
-    ./indent-blankline.nix
     ./persistence.nix
-    ./aerial.nix
-    ./colorizer.nix
+    ./telescope.nix
+    ./tmux-navigator.nix
+    ./toggleterm.nix
+    ./treesitter.nix
+    ./ts-autotag.nix
+    ./vim-matchup.nix
+    ./wakatime.nix
+    ./web-devicons.nix
+    ./which-key.nix
   ];
 }

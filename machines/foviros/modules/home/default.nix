@@ -1,14 +1,14 @@
 {
   imports = [
     ./browsers
-    ./desktop
-    ./games
-    ./media
-    ./terminal
     ./cybersecurity
+    ./desktop
     ./development
+    ./games
     ./hardwares
+    ./media
     ./office
+    ./terminal
     ./utilities
   ];
 }

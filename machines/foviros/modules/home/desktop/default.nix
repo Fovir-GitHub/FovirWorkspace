@@ -1,15 +1,15 @@
 {
   imports = [
-    ./hyprpolkitagent.nix
-    ./hyprcursor.nix
     ./fuzzel.nix
+    ./gtk.nix
+    ./hyprcursor.nix
+    ./hyprland.nix
+    ./hyprlock.nix
     ./hyprpanel
     ./hyprpaper.nix
-    ./hyprland.nix
-    ./gtk.nix
-    ./xdg.nix
+    ./hyprpolkitagent.nix
     ./qt
-    ./hyprlock.nix
     ./wl-clipboard-rs.nix
+    ./xdg.nix
   ];
 }

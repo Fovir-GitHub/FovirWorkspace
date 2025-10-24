@@ -2,18 +2,18 @@
   system.stateVersion = "25.05";
 
   imports = [
-    ../../modules/shared
-    ../../modules/optional/desktop-services
-    ../../modules/optional/zfs.nix
-    ../../modules/optional/virtualisation/qemu.nix
-    ../../modules/optional/virtualisation/docker.nix
     ../../modules/optional/boot-loader/systemd-boot.nix
+    ../../modules/optional/desktop-services
     ../../modules/optional/kernels/cachyos-desktop.nix
-    ./values/hardware-configuration.nix
+    ../../modules/optional/virtualisation/docker.nix
+    ../../modules/optional/virtualisation/qemu.nix
+    ../../modules/optional/zfs.nix
+    ../../modules/shared
     ./modules
-
-    inputs.home-manager.nixosModules.home-manager
+    ./values/hardware-configuration.nix
     inputs.chaotic.nixosModules.default
+    inputs.home-manager.nixosModules.home-manager
+
     {
       nixpkgs.overlays = [
         inputs.nix-vscode-extensions.overlays.default

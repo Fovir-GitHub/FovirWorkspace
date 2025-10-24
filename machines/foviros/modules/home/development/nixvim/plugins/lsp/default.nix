@@ -1,20 +1,20 @@
 {...}: {
   imports = [
-    ./sqls.nix
+    ./clangd.nix
+    ./cssls.nix
+    ./eslint.nix
+    ./gopls.nix
+    ./html.nix
     ./jdtls.nix
-    ./lemminx.nix
+    ./jsonls.nix
     ./just.nix
+    ./lemminx.nix
+    ./ltex.nix
+    ./nil.nix
+    ./pyright.nix
+    ./sqls.nix
     ./tailwindcss.nix
     ./ts_ls.nix
-    ./eslint.nix
-    ./jsonls.nix
-    ./cssls.nix
-    ./pyright.nix
-    ./clangd.nix
-    ./ltex.nix
-    ./gopls.nix
-    ./nil.nix
-    ./html.nix
     ./yamlls.nix
   ];
 

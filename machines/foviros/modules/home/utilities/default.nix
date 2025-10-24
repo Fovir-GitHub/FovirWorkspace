@@ -1,13 +1,13 @@
 {
   imports = [
-    ./flameshot.nix
-    ./screenshot.nix
-    ./qalculate.nix
     ./archiver.nix
+    ./flameshot.nix
     ./keepassxc.nix
-    ./thunderbird.nix
-    ./rime.nix
-    ./nemo.nix
     ./localsend.nix
+    ./nemo.nix
+    ./qalculate.nix
+    ./rime.nix
+    ./screenshot.nix
+    ./thunderbird.nix
   ];
 }

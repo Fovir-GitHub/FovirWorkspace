@@ -1,15 +1,15 @@
 {
   inputs = {
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     clan-core = {
       inputs.nixpkgs.follows = "nixpkgs";
       url = "https://git.clan.lol/clan/clan-core/archive/main.tar.gz";
     };
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    disko.url = "github:nix-community/disko/latest";
     disko.inputs.nixpkgs.follows = "nixpkgs";
+    disko.url = "github:nix-community/disko/latest";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim = {
       url = "github:Fovir-GitHub/nixvim";
     };
@@ -46,11 +46,11 @@
       (system: {
         default = clan-core.inputs.nixpkgs.legacyPackages.${system}.mkShell {
           packages = with clan-core.inputs.nixpkgs.legacyPackages.${system}; [
-            clan-core.packages.${system}.clan-cli
-            sops
-            just
             alejandra
+            clan-core.packages.${system}.clan-cli
             deadnix
+            just
+            sops
           ];
         };
       });

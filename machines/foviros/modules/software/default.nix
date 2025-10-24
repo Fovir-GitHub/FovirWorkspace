@@ -1,8 +1,8 @@
 {...}: {
   imports = [
-    ./direnv.nix
     ./chromium.nix
-    ./wireshark.nix
+    ./direnv.nix
     ./sci.nix
+    ./wireshark.nix
   ];
 }

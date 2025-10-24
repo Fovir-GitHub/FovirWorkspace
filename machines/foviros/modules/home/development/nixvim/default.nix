@@ -16,11 +16,11 @@
     };
 
     imports = [
-      ./colorscheme.nix # Theme.
-      ./plugins # Plugins settings.
-      ./opts.nix # Options.
-      ./keymaps.nix # Import key maps.
       ./autocmd.nix # Import auto commands.
+      ./colorscheme.nix # Theme.
+      ./keymaps.nix # Import key maps.
+      ./opts.nix # Options.
+      ./plugins # Plugins settings.
     ];
   };
 }

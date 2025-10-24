@@ -1,14 +1,14 @@
 {
   imports = [
-    ./ntp.nix
-    ./gvfs.nix
+    ./bluetooth.nix
+    ./dbus.nix
     ./greetd.nix
+    ./gvfs.nix
+    ./keyd.nix
+    ./ntp.nix
+    ./pipewire.nix
+    ./tlp.nix
     ./upower.nix
     ./xserver.nix
-    ./keyd.nix
-    ./dbus.nix
-    ./pipewire.nix
-    ./bluetooth.nix
-    ./tlp.nix
   ];
 }

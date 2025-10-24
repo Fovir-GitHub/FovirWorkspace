@@ -1,21 +1,21 @@
 {...}: {
   imports = [
-    ./taplo.nix
-    ./vscodium.nix
-    ./xmlstarlet.nix
+    ./c_cpp
+    ./editorconfig.nix
+    ./git.nix
+    ./go
+    ./java.nix
     ./just.nix
-    ./nodejs
     ./live-server.nix
+    ./neovide.nix
+    ./nix
+    ./nixvim
+    ./nodejs
     ./prettier.nix
     ./python
     ./remmina.nix
-    ./git.nix
-    ./nixvim
-    ./neovide.nix
-    ./c_cpp
-    ./go
-    ./nix
-    ./editorconfig.nix
-    ./java.nix
+    ./taplo.nix
+    ./vscodium.nix
+    ./xmlstarlet.nix
   ];
 }

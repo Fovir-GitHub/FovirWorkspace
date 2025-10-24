@@ -1,11 +1,11 @@
 {
   imports = [
-    ./mumble.nix
     ./inkscape.nix
-    ./playerctl.nix
+    ./mpv.nix
+    ./mumble.nix
     ./obs-studio.nix
     ./oculante.nix
-    ./mpv.nix
+    ./playerctl.nix
     ./strawberry
   ];
 }

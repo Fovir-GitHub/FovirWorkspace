@@ -1,20 +1,20 @@
 {
   imports = [
-    ./rename.nix
-    ./path.nix
-    ./zsh
     ./bash
-    ./starship.nix
-    ./rsync.nix
-    ./fastfetch
-    ./btop.nix
-    ./eza.nix
-    ./yazi.nix
-    ./dust.nix
-    ./tldr.nix
-    ./fd.nix
     ./bat.nix
-    ./ripgrep.nix
+    ./btop.nix
+    ./dust.nix
+    ./eza.nix
+    ./fastfetch
+    ./fd.nix
     ./kitty.nix
+    ./path.nix
+    ./rename.nix
+    ./ripgrep.nix
+    ./rsync.nix
+    ./starship.nix
+    ./tldr.nix
+    ./yazi.nix
+    ./zsh
   ];
 }

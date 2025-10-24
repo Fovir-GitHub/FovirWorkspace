@@ -1,11 +1,11 @@
 {
   imports = [
-    ./sci.nix
-    ./radicale.nix
-    ./umami.nix
-    ./restic.nix
-    ./wakapi.nix
-    ./postgres.nix
     ./caddy.nix
+    ./postgres.nix
+    ./radicale.nix
+    ./restic.nix
+    ./sci.nix
+    ./umami.nix
+    ./wakapi.nix
   ];
 }
