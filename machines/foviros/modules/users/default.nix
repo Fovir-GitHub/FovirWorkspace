@@ -1,6 +1,7 @@
 {
   config,
   inputs,
+  pkgs,
   ...
 }: {
   home-manager = {
@@ -21,7 +22,15 @@
   };
 
   users.users = {
-    fovir = import ../../values/user-fovir.nix;
+    fovir = {
+      isNormalUser = true;
+      extraGroups = import ../../values/user-fovir-extra-groups.nix;
+      hashedPassword = import ../../values/user-fovir-password.nix;
+      shell = pkgs.zsh;
+      ignoreShellProgramCheck = true;
+      homeMode = "755";
+    };
+
     root = import ../../values/user-root.nix;
   };
 }
