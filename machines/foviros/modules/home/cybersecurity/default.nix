@@ -1,6 +1,6 @@
 {
   imports = [
-    ./dsniff.nix
+    # ./dsniff.nix
     ./ghidra.nix
     ./nmap.nix
     ./sqlmap.nix
