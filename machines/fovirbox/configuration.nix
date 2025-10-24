@@ -13,6 +13,4 @@
     ../../modules/optional/boot-loader/limine.nix
     ../../modules/shared
   ];
-
-  zramSwap.enable = true;
 }
