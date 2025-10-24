@@ -9,6 +9,7 @@
     ./services
     ../../modules/optional/zfs.nix
     ../../modules/optional/podman.nix
+    ../../modules/optional/kernels/cachyos-server.nix
     ../../modules/shared
   ];
 
