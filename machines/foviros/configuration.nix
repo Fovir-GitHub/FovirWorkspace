@@ -1,9 +1,4 @@
-{
-  pkgs,
-  config,
-  inputs,
-  ...
-}: {
+{inputs, ...}: {
   system.stateVersion = "25.05";
 
   imports = [

@@ -1,7 +1,6 @@
 # This module extends home.file, xdg.configFile and xdg.dataFile with the `mutable` option.
 {
   config,
-  pkgs,
   lib,
   ...
 }: let
@@ -10,7 +9,7 @@ in {
   options = let
     mergeAttrsList = builtins.foldl' (lib.mergeAttrs) {};
 
-    fileAttrsType = lib.types.attrsOf (lib.types.submodule ({config, ...}: {
+    fileAttrsType = lib.types.attrsOf (lib.types.submodule ({...}: {
       options.mutable = lib.mkOption {
         type = lib.types.bool;
         default = false;

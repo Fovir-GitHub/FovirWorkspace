@@ -20,11 +20,6 @@
     self,
     clan-core,
     nixpkgs,
-    home-manager,
-    nixvim,
-    chaotic,
-    disko,
-    nix-vscode-extensions,
     ...
   } @ inputs: let
     # Usage see: https://docs.clan.lol

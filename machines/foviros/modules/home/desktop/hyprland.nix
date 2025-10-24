@@ -1,4 +1,4 @@
-{hostName, ...}: let
+{...}: let
   monitor_name = "eDP-1";
 
   screenshotCommand = "flameshot gui";
