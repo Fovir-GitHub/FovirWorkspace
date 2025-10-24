@@ -34,7 +34,7 @@ format:
   deadnix -e
   alejandra .
 
-dry-build host:
+check host:
   # Check whether configurations are valid.
   git add --all
   nix eval .#nixosConfigurations.{{host}}.config.system.build.toplevel
