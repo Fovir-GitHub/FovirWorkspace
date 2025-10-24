@@ -1,8 +1,8 @@
-{...}: {
+{lib, ...}: {
   networking.networkmanager = {
     enable = true;
 
-    dns = "none";
+    dns = lib.mkDefault "none";
     insertNameservers = import ../../values/name-servers.nix;
   };
 }
