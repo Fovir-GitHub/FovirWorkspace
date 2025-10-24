@@ -1,0 +1,51 @@
+{...}: {
+  plugins.neo-tree = {
+    enable = true;
+
+    settings = {
+      enable_diagnostics = true;
+      enable_git_status = true;
+      enable_modified_markers = true;
+      use_default_mappings = false;
+      close_if_last_window = true;
+      popup_border_style = "rounded";
+
+      window.mappings = {
+        "<cr>" = "open";
+        o = "open";
+        "<C-\\>" = "open_vsplit";
+        l = "toggle_node";
+        h = "close_node";
+        r = "rename";
+        f = "refresh";
+        a = {
+          command = "add";
+          config = {
+            show_path = "relative";
+          };
+        };
+        A = "add_directory";
+        y = "copy_to_clipboard";
+        p = "paste_from_clipboard";
+        d = "delete";
+        "." = "toggle_hidden";
+      };
+      event_handlers = {
+        file_opened = ''
+          function(file_path)
+            require("neo-tree").close_all()
+          end
+        '';
+      };
+    };
+  };
+
+  keymaps = [
+    {
+      key = "<leader>e";
+      action = "<cmd>Neotree toggle<cr>";
+      mode = "n";
+      options.desc = "Toggle File Explorer";
+    }
+  ];
+}
