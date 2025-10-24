@@ -1,79 +1,62 @@
-{pkgs, ...}: {
-  extraPlugins = [
-    (pkgs.vimUtils.buildVimPlugin {
-      pname = "cybu.nvim";
-      version = "main";
-      src = pkgs.fetchFromGitHub {
-        owner = "ghillb";
-        repo = "cybu.nvim";
-        rev = "main";
-        sha256 = "sha256-wa+TtDyotQTNUIvGLrHxS6TWFyaA8A4EwZeatQuNry8=";
-      };
-    })
-  ];
+{...}: {
+  plugins.cybu = {
+    enable = true;
 
-  extraConfigLua = ''
-    require("cybu").setup({
+    settings = {
       position = {
-        relative_to = "win",          -- win, editor, cursor
-        anchor = "topcenter",         -- topleft, topcenter, topright,
-                                        -- centerleft, center, centerright,
-                                        -- bottomleft, bottomcenter, bottomright
-        vertical_offset = 0,         -- vertical offset from anchor in lines
-        horizontal_offset = 0,        -- vertical offset from anchor in columns
-        max_win_height = 10,           -- height of cybu window in lines
-        max_win_width = 0.5,          -- integer for absolute in columns
-                                        -- float for relative to win/editor width
-      },
+        relative_to = "win";
+        anchor = "topcenter";
+        vertical_offset = 0;
+        horizontal_offset = 0;
+        max_win_height = 10;
+        max_win_width = 0.5;
+      };
       style = {
-        path = "tail_dir",            -- absolute, relative, tail (filename only),
-                                        -- tail_dir (filename & parent dir)
-        path_abbreviation = "none",   -- none, shortened
-        border = "rounded",           -- single, double, rounded, none
-        separator = " ",              -- string used as separator
-        prefix = "…",                 -- string used as prefix for truncated paths
-        padding = 1,                  -- left & right padding in number of spaces
-        hide_buffer_id = true,        -- hide buffer IDs in window
+        path = "tail_dir";
+        path_abbreviation = "none";
+        border = "rounded";
+        separator = " ";
+        prefix = "…";
+        padding = 1;
+        hide_buffer_id = true;
         devicons = {
-          enabled = true,             -- enable or disable web dev icons
-          colored = true,             -- enable color for web dev icons
-          truncate = true,            -- truncate wide icons to one char width
-        },
-        highlights = {                -- see highlights via :highlight
-          current_buffer = "CybuFocus",       -- current / selected buffer
-          adjacent_buffers = "CybuAdjacent",  -- buffers not in focus
-          background = "CybuBackground",      -- window background
-          border = "CybuBorder",              -- border of the window
-        },
-      },
-      behavior = {                    -- set behavior for different modes
+          enabled = true;
+          colored = true;
+          truncate = true;
+        };
+        highlights = {
+          current_buffer = "CybuFocus";
+          adjacent_buffers = "CybuAdjacent";
+          background = "CybuBackground";
+          border = "CybuBorder";
+        };
+      };
+      behavior = {
         mode = {
           default = {
-            switch = "immediate",     -- immediate, on_close
-            view = "rolling",         -- paging, rolling
-          },
+            switch = "immediate";
+            view = "rolling";
+          };
           last_used = {
-            switch = "immediate",      -- immediate, on_close
-            view = "rolling",          -- paging, rolling
-            update_on = "buf_enter",  -- buf_enter, cursor_moved
-          },
+            switch = "immediate";
+            view = "rolling";
+            update_on = "buf_enter";
+          };
           auto = {
-            view = "rolling",         -- paging, rolling
-          },
-        },
-        show_on_autocmd = false,      -- event to trigger cybu (eg. "BufEnter")
-      },
-      display_time = 600,             -- time the cybu window is displayed
-      exclude = {                     -- filetypes, cybu will not be active
-        "neo-tree",
-        "fugitive",
-        "qf",
-      },
+            view = "rolling";
+          };
+        };
+        show_on_autocmd = false;
+      };
+      display_time = 600;
+      exclude = [
+        "neo-tree"
+        "fugitive"
+        "qf"
+      ];
       filter = {
-        unlisted = true,              -- filter & fallback for unlisted buffers
-      },
-      fallback = function() end,      -- arbitrary fallback function
-                                        -- used in excluded filetypes
-    })
-  '';
+        unlisted = true;
+      };
+    };
+  };
 }
