@@ -6,12 +6,14 @@
   home.file.".local/share/fcitx5/rime" = {
     force = true;
     recursive = true;
-    source = pkgs.fetchFromGitHub {
-      hash = "sha256-l1e5Zrrqlvu+86JVCBTihzl5+gIJvzXeop4VPvQG8dk=";
-      owner = "Fovir-GitHub";
-      repo = "rime";
-      rev = "03a555a7181a04178984f05a658c6f25d368bdb3";
-    };
+    source =
+      pkgs.fetchFromGitHub {
+        hash = "sha256-/5OJPess4VkHhJ6UIoBH+Llj0OAWNdjHki7t8smzk3c
+=";
+        owner = "Fovir-GitHub";
+        repo = "rime";
+        rev = "16b232b88e181ab74b4e881e466797ab25222e66";
+      };
   };
 
   home.file."${config.xdg.configHome}/fcitx5/conf/rime.conf".text = ''
