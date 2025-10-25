@@ -1,16 +1,16 @@
-encrypt host:
+ec host:
   # Encrypt values of {{host}}.
   ls ./machines/{{host}}/values/* | xargs -n 1 sops encrypt -i
 
-decrypt host:
+dc host:
   # Decrypt values of {{host}}.
   ls ./machines/{{host}}/values/* | xargs -n 1 sops decrypt -i
 
-encrypt-all:
+ea:
   # Encrypt all values of machines.
   ls ./machines/*/values/* | xargs -n 1 sops encrypt -i
 
-decrypt-all:
+da:
   # Decrypt all values of machines.
   ls ./machines/*/values/* | xargs -n 1 sops decrypt -i
 
@@ -20,7 +20,7 @@ vm host:
   nixos-rebuild build-vm --flake .#{{host}} --show-trace
   git restore --staged .
 
-commit-values:
+cv:
   # Commit all values automatically.
   git add ./machines/*/values
   git commit -m "chore: Encrypt values."
