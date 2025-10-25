@@ -30,13 +30,17 @@
         d = "delete";
         "." = "toggle_hidden";
       };
-      event_handlers = {
-        file_opened = ''
-          function(file_path)
-            require("neo-tree").close_all()
-          end
-        '';
-      };
+
+      event_handlers.__raw = ''
+        {
+          {
+            event = "file_open_requested",
+            handler = function()
+              require("neo-tree.command").execute({ action = "close" })
+            end
+          },
+        }
+      '';
     };
   };
 
