@@ -9,7 +9,7 @@
     disko.url = "github:nix-community/disko/latest";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
-    nixpkgs.url = "github:nixos/nixpkgs/cb82756";
+    nixpkgs.url = "github:nixos/nixpkgs/5e2a59a5b1a82f89f2c7e598302a9cacebb72a67";
     nixvim = {
       url = "github:Fovir-GitHub/nixvim";
     };
