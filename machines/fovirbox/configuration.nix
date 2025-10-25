@@ -3,6 +3,7 @@
   networking.hostId = "00000000";
 
   services.openssh.ports = import ./values/ssh-port.nix;
+  boot.kernelParams = ["zfs.zfs_arc_max=2147483648"];
 
   imports = [
     ../../modules/optional/boot-loader/limine.nix
