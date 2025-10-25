@@ -31,12 +31,9 @@ install host target:
 
 update host:
   # Update machine configuration.
-  just decrypt {{host}}
   git add --all
   clan machines update {{host}}
   git restore --staged .
-  just encrypt {{host}}
-  just commit-values {{host}}
 
 format:
   # Use alejandra and deadnix to format code
