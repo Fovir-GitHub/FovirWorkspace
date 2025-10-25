@@ -8,7 +8,7 @@
     recursive = true;
     source = pkgs.fetchFromGitHub {
       hash = "sha256-l1e5Zrrqlvu+86JVCBTihzl5+gIJvzXeop4VPvQG8dk=";
-      owner = "FovirOS";
+      owner = "Fovir-GitHub";
       repo = "rime";
       rev = "03a555a7181a04178984f05a658c6f25d368bdb3";
     };
