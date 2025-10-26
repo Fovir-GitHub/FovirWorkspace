@@ -1,6 +1,7 @@
 {
   imports = [
     ./caddy.nix
+    ./openlist.nix
     ./postgres.nix
     ./radicale.nix
     ./restic.nix
