@@ -101,15 +101,14 @@ in {
         "fcitx5-remote -r"
         "fcitx5 -d --replace &"
         "fcitx5-remote -r"
-
         "hyprpaper"
-
         "disable_touchpad.sh"
         "thunderbird"
         "nekoray"
         "keepassxc"
         "strawberry"
         "random_wallpaper.sh"
+        "syncthing --no-browser"
       ];
 
       general = {
