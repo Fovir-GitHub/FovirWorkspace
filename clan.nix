@@ -10,5 +10,9 @@
     };
     foviros = {
     };
+    iceyeah = {
+      deploy.targetHost = "iceyeah";
+      tags = [];
+    };
   };
 }
