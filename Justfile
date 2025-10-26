@@ -28,7 +28,7 @@ cv:
 install host target:
   # Install machine {{host}} to {{target}}.
   git add --all
-  clan machines install {{host}} --target-host {{target}}
+  clan machines install {{host}} --target-host {{target}} --update-hardware-config nixos-facter
   git restore --staged .
 
 update host:
