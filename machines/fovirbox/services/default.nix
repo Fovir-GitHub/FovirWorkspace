@@ -1,5 +1,6 @@
 {
   imports = [
+    ./ensure-path.nix
     ./caddy.nix
     ./openlist.nix
     ./postgres.nix
