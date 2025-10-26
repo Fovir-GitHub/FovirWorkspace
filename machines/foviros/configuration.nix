@@ -12,6 +12,8 @@
     ./modules
     ./values/hardware-configuration.nix
     inputs.chaotic.nixosModules.default
+    inputs.daeuniverse.nixosModules.dae
+    inputs.daeuniverse.nixosModules.daed
     inputs.home-manager.nixosModules.home-manager
 
     {

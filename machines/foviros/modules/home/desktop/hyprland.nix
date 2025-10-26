@@ -104,7 +104,6 @@ in {
         "hyprpaper"
         "disable_touchpad.sh"
         "thunderbird"
-        "nekoray"
         "keepassxc"
         "strawberry"
         "random_wallpaper.sh"
@@ -148,7 +147,7 @@ in {
       };
 
       windowrulev2 = [
-        "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$"
+        "workspace special, class:^(thunderbird)$|^*strawberry*$"
       ];
 
       ecosystem = {
