@@ -27,7 +27,9 @@ cv:
 
 install host target:
   # Install machine {{host}} to {{target}}.
+  git add --all
   clan machines install {{host}} --target-host {{target}}
+  git restore --staged .
 
 update host:
   # Update machine configuration.
