@@ -1,5 +1,6 @@
 {
   imports = [
+    ./syncthing.nix
     ./ensure-path.nix
     ./caddy.nix
     ./openlist.nix
