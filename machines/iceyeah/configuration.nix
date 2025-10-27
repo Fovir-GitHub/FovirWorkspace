@@ -4,8 +4,10 @@ in {
   boot.kernelParams = ["zfs.zfs_arc_max=2147483648"];
   boot.loader.limine.biosDevice = lib.mkForce disk;
   disko.devices.disk.main.device = disk;
-  networking.hostId = "00000000";
+  networking.hostId = "007f0100";
+  networking.hostName = "iceyeah";
   services.openssh.ports = import ./values/ssh-port.nix;
+  system.stateVersion = "25.11";
   users.users.root = import ./values/user-root.nix;
 
   imports = [

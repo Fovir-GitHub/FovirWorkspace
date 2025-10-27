@@ -1,6 +1,6 @@
 {
   imports = [
     ./disko.nix
-    # ./network.nix
+    ./network.nix
   ];
 }
