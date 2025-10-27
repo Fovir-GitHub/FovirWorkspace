@@ -2,6 +2,9 @@
   "machines": {
     "fovirbox": {
       "installedAt": 1761143792
+    },
+    "iceyeah": {
+      "installedAt": 1761552376
     }
   }
 }
