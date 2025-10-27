@@ -11,7 +11,7 @@
     foviros = {
     };
     iceyeah = {
-      deploy.targetHost = "iceyeah";
+      deploy.targetHost = "vps";
       tags = [];
     };
   };
