@@ -5,6 +5,7 @@
     shellIntegration = {
       enableBashIntegration = true;
       enableZshIntegration = true;
+      mode = "no-rc";
     };
 
     enableGitIntegration = true;
