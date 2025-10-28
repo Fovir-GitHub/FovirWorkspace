@@ -2,6 +2,7 @@
   imports = [
     ./caddy.nix
     ./ensure-path.nix
+    ./fusion.nix
     ./openlist.nix
     ./postgres.nix
     ./radicale.nix
