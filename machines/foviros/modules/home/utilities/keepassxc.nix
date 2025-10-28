@@ -28,6 +28,10 @@
       [Security]
       LockDatabaseIdle=true
       LockDatabaseIdleSeconds=300
+
+      [SSHAgent]
+      Enabled=true
+      UseOpenSSH=true
     '';
   };
 
