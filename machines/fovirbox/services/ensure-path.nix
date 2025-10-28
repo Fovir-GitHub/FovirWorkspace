@@ -2,7 +2,7 @@
   imports = [
     (import ../../../lib/ensure-path.nix {
       inherit pkgs;
-      prefix = "/var/lib/data";
+      prefix = import ../values/podman-data-dir.nix;
       paths = import ../values/ensure-paths.nix;
     })
   ];

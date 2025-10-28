@@ -6,7 +6,7 @@
     ];
     environment = import ../values/wakapi-environment.nix;
     volumes = [
-      "/var/lib/data/wakapi:/data:rw"
+      "${import ../values/podman-data-dir.nix}/wakapi:/data:rw"
     ];
   };
 }
