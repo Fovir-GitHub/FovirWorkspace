@@ -7,6 +7,7 @@
     ./radicale.nix
     ./redis.nix
     ./restic.nix
+    ./rsshub.nix
     ./sci.nix
     ./syncthing.nix
     ./umami.nix
