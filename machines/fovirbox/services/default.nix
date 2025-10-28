@@ -5,6 +5,7 @@
     ./openlist.nix
     ./postgres.nix
     ./radicale.nix
+    ./redis.nix
     ./restic.nix
     ./sci.nix
     ./syncthing.nix
