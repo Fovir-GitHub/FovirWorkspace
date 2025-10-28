@@ -147,7 +147,7 @@ in {
       };
 
       windowrulev2 = [
-        "workspace special, class:^(thunderbird)$|^*strawberry*$"
+        "workspace special, class:^(thunderbird)$|^*strawberry*|^*keepassxc*"
       ];
 
       ecosystem = {
