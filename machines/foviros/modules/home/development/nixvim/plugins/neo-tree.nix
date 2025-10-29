@@ -9,6 +9,16 @@
       use_default_mappings = false;
       close_if_last_window = true;
       popup_border_style = "rounded";
+      filesystem = {
+        follow_current_file = {
+          enabled = true;
+          leave_dirs_open = true;
+        };
+        use_libuv_file_watcher = true;
+      };
+      clipboard = {
+        sync = "universal";
+      };
 
       window.mappings = {
         "<cr>" = "open";
