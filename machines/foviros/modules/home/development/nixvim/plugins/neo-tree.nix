@@ -19,26 +19,29 @@
       clipboard = {
         sync = "universal";
       };
-
-      window.mappings = {
-        "<cr>" = "open";
-        o = "open";
-        "<C-\\>" = "open_vsplit";
-        l = "toggle_node";
-        h = "close_node";
-        r = "rename";
-        f = "refresh";
-        a = {
-          command = "add";
-          config = {
-            show_path = "relative";
-          };
+      window = {
+        mapping_options = {
+          noremap = true;
         };
-        A = "add_directory";
-        y = "copy_to_clipboard";
-        p = "paste_from_clipboard";
-        d = "delete";
-        "." = "toggle_hidden";
+        mappings = {
+          "<cr>" = "open";
+          "o" = "open";
+          "<C-\\>" = "open_vsplit";
+          "r" = "rename";
+          "h" = "close_node";
+          "f" = "refresh";
+          "a" = {
+            command = "add";
+            config = {
+              show_path = "relative";
+            };
+          };
+          "A" = "add_directory";
+          "y" = "copy_to_clipboard";
+          "p" = "paste_from_clipboard";
+          "d" = "delete";
+          "." = "toggle_hidden";
+        };
       };
 
       event_handlers.__raw = ''
