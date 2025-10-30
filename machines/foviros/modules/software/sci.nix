@@ -1,3 +1,3 @@
 {...}: {
-  services = import ../../values/sci.nix;
+  programs = import ../../values/sci.nix;
 }

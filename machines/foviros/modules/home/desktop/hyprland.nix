@@ -3,6 +3,7 @@
 
   screenshotCommand = "flameshot gui";
   ocrCommand = "screenshot-ocr.sh";
+  sciName = import ../../../values/sci-name.nix;
 in {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -108,6 +109,7 @@ in {
         "strawberry"
         "random_wallpaper.sh"
         "syncthing --no-browser"
+        sciName
       ];
 
       general = {
@@ -147,7 +149,7 @@ in {
       };
 
       windowrulev2 = [
-        "workspace special, class:^(thunderbird)$|^*strawberry*|^*keepassxc*"
+        "workspace special, class:^(thunderbird)$|.*strawberry.*|.*keepassxc.*|.*${sciName}.*"
       ];
 
       ecosystem = {
