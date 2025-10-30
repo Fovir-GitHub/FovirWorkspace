@@ -13,6 +13,7 @@
     ./nil.nix
     ./pyright.nix
     ./sqls.nix
+    ./svelte.nix
     ./tailwindcss.nix
     ./ts_ls.nix
     ./yamlls.nix
