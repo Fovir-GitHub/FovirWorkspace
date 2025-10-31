@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     ./c_cpp
+    ./dosbox.nix
     ./editorconfig.nix
     ./git.nix
     ./go
