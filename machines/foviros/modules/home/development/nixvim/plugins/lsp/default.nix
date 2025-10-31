@@ -2,7 +2,6 @@
   imports = [
     ./clangd.nix
     ./cssls.nix
-    ./eslint.nix
     ./gopls.nix
     ./html.nix
     ./jdtls.nix
