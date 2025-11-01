@@ -9,5 +9,6 @@
     ./neovide.nix
     ./nixvim
     ./vscodium.nix
+    ./wakatime.nix
   ];
 }
