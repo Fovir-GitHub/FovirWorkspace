@@ -12,10 +12,16 @@
       inherit (config.networking) hostName;
       inherit inputs;
     };
+
     users.fovir = {
+      home = {
+        homeDirectory = "/home/fovir";
+        stateVersion = "25.05";
+        username = "fovir";
+      };
       imports = [
-        ./fovir.nix
         ../../../../modules/optional/mutable-files.nix
+        ../home
         inputs.nixvim.homeModules.nixvim
       ];
     };

@@ -3,6 +3,5 @@
     ./desktop
     ./software
     ./system
-    ./users
   ];
 }
