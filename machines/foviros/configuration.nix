@@ -5,8 +5,8 @@
     ../../modules/optional/boot-loader/systemd-boot.nix
     ../../modules/optional/desktop-services
     ../../modules/optional/kernels/cachyos-desktop.nix
-    ../../modules/optional/virtualisation/docker.nix
     ../../modules/optional/virtualisation/qemu.nix
+    ../../modules/optional/virtualisation/podman.nix
     ../../modules/optional/zfs.nix
     ../../modules/shared
     ./modules
