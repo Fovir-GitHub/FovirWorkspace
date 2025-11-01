@@ -7,7 +7,6 @@
     ./games
     ./hardwares
     ./media
-    ./office
     ./terminal
     ./utilities
   ];
