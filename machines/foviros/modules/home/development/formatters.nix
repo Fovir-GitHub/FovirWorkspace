@@ -4,6 +4,8 @@
     prettier-plugin-go-template
     taplo
     xmlstarlet
+    google-java-format
+    alejandra
   ];
 
   home.file.".prettierrc" = {
