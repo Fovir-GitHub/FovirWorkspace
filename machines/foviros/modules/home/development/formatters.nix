@@ -1,11 +1,11 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    alejandra
+    google-java-format
     prettier
     prettier-plugin-go-template
     taplo
     xmlstarlet
-    google-java-format
-    alejandra
   ];
 
   home.file.".prettierrc" = {
