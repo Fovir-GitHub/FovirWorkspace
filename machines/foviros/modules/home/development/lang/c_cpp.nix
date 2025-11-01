@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    # LSP and compliers.
+    # LSP, compliers and formatter.
     llvmPackages_19.clang-tools
     gcc
 
