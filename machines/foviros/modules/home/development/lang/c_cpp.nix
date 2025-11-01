@@ -1,7 +1,16 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    llvmPackages_19.clang-tools # For LSP.
-    gcc # Global compiler.
+    # LSP and compliers.
+    llvmPackages_19.clang-tools
+    gcc
+
+    # Debuggers.
+    gdb
+    cgdb
+
+    # Make tools.
+    cmake
+    gnumake
   ];
 
   home.file.".clang-tidy".text = ''
