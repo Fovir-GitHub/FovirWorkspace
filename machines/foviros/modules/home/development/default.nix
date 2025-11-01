@@ -11,7 +11,6 @@
     ./neovide.nix
     ./nix
     ./nixvim
-    ./nodejs
     ./prettier.nix
     ./python
     ./remmina.nix
