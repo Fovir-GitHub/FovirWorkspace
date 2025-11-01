@@ -1,6 +1,6 @@
 {
   imports = [
-    ./bash
+    ./bash.nix
     ./bat.nix
     ./btop.nix
     ./dust.nix
@@ -15,6 +15,6 @@
     ./starship.nix
     ./tldr.nix
     ./yazi.nix
-    ./zsh
+    ./zsh.nix
   ];
 }
