@@ -3,6 +3,7 @@
     ./archiver.nix
     ./flameshot.nix
     ./keepassxc.nix
+    ./libreoffice.nix
     ./localsend.nix
     ./nemo.nix
     ./qalculate.nix
