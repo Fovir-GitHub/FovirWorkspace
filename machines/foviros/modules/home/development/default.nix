@@ -8,7 +8,6 @@
     ./live-server.nix
     ./neovide.nix
     ./nixvim
-    ./remmina.nix
     ./vscodium.nix
   ];
 }
