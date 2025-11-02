@@ -8,10 +8,5 @@
       address = import ../values/ipv4-gateway-address.nix;
       interface = "ens3";
     };
-
-    defaultGateway6 = {
-      address = import ../values/ipv6-gateway-address.nix;
-      interface = "ens3";
-    };
   };
 }
