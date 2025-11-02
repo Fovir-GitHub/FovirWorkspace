@@ -46,5 +46,8 @@
     # Enable line wrap.
     wrap = true;
     linebreak = true;
+
+    ## Max columns to highlight syntax.
+    synmaxcol = 200;
   };
 }
