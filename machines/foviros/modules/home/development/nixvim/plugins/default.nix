@@ -8,6 +8,7 @@
     ./conform-nvim.nix
     ./cybu.nix
     ./dashboard.nix
+    ./direnv.nix
     ./emmet.nix
     ./gitsigns.nix
     ./guess-indent.nix
