@@ -1,13 +1,5 @@
 valuePath:="./machines/*/values/* ./modules/values/*"
 
-ec host:
-  # Encrypt values of {{host}}.
-  ls ./machines/{{host}}/values/* | xargs -n 1 sops encrypt -i
-
-dc host:
-  # Decrypt values of {{host}}.
-  ls ./machines/{{host}}/values/* | xargs -n 1 sops decrypt -i
-
 ea:
   # Encrypt all values of machines.
   ls {{valuePath}} | xargs -n 1 sops encrypt -i
