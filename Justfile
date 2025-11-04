@@ -1,3 +1,5 @@
+valuePath:="./machines/*/values/* ./modules/values/*"
+
 ec host:
   # Encrypt values of {{host}}.
   ls ./machines/{{host}}/values/* | xargs -n 1 sops encrypt -i
@@ -8,11 +10,11 @@ dc host:
 
 ea:
   # Encrypt all values of machines.
-  ls ./machines/*/values/* | xargs -n 1 sops encrypt -i
+  ls {{valuePath}} | xargs -n 1 sops encrypt -i
 
 da:
   # Decrypt all values of machines.
-  ls ./machines/*/values/* | xargs -n 1 sops decrypt -i
+  ls {{valuePath}} | xargs -n 1 sops decrypt -i
 
 vm host:
   # Build vm.
@@ -22,7 +24,7 @@ vm host:
 
 cv:
   # Commit all values automatically.
-  git add ./machines/*/values
+  git add {{valuePath}}
   git commit -m "chore: Encrypt values."
 
 install host target:
