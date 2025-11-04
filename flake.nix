@@ -5,7 +5,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       url = "https://git.clan.lol/clan/clan-core/archive/main.tar.gz";
     };
-    daeuniverse.url = "github:daeuniverse/flake.nix";
     disko.inputs.nixpkgs.follows = "nixpkgs";
     disko.url = "github:nix-community/disko/latest";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
