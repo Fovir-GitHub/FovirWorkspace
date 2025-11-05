@@ -1,4 +1,13 @@
-{...}: {
+{...}: let
+  openFileWithForceFocus = ''
+    function(state)
+      local tree = state.tree
+      local node = assert(tree:get_node())
+      require("neo-tree.sources.filesystem.commands").open(state)
+      require("neo-tree.ui.renderer").focus_node(state, node:get_id())
+    end
+  '';
+in {
   plugins.neo-tree = {
     enable = true;
 
@@ -12,20 +21,16 @@
       filesystem = {
         follow_current_file = {
           enabled = false;
-          leave_dirs_open = true;
+          leave_dirs_open = false;
         };
-        use_libuv_file_watcher = true;
       };
       clipboard = {
         sync = "universal";
       };
       window = {
-        mapping_options = {
-          noremap = true;
-        };
         mappings = {
-          "<cr>" = "open";
-          "o" = "open";
+          "<cr>".__raw = openFileWithForceFocus;
+          "o".__raw = openFileWithForceFocus;
           "<C-\\>" = "open_vsplit";
           "r" = "rename";
           "h" = "close_node";
@@ -47,9 +52,9 @@
       event_handlers.__raw = ''
         {
           {
-            event = "file_open_requested",
-            handler = function()
-              require("neo-tree.command").execute({ action = "close" })
+            event = "file_opened",
+            handler = function(file_path)
+              require("neo-tree").close_all()
             end
           },
         }
