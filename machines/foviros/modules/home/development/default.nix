@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./dconf.nix
     ./dosbox.nix
     ./formatters.nix
     ./git.nix
