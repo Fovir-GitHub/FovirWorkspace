@@ -5,6 +5,7 @@
     slurp
     swappy
     tesseract
+    kooha
   ];
 
   home.file.".local/bin/screenshot-ocr.sh" = {
