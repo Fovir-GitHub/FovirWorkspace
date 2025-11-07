@@ -9,6 +9,7 @@
     ./live-server.nix
     ./neovide.nix
     ./nixvim
+    ./podman-compose.nix
     ./vscodium.nix
     ./wakatime.nix
   ];
