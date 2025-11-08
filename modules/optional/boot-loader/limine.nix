@@ -4,7 +4,7 @@
     efiInstallAsRemovable = true;
     efiSupport = true;
     enable = true;
-    maxGenerations = 10;
+    maxGenerations = 3;
     partitionIndex = 1;
   };
 }
