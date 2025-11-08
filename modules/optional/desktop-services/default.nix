@@ -7,8 +7,7 @@
     ./keyd.nix
     ./ntp.nix
     ./pipewire.nix
-    ./tlp.nix
-    ./upower.nix
+    ./power.nix
     ./xserver.nix
   ];
 }
