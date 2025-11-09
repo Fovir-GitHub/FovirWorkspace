@@ -31,6 +31,7 @@ in {
         mappings = {
           "<cr>".__raw = openFileWithForceFocus;
           "o".__raw = openFileWithForceFocus;
+          "l".__raw = openFileWithForceFocus;
           "<C-\\>" = "open_vsplit";
           "r" = "rename";
           "h" = "close_node";
