@@ -18,20 +18,23 @@
       clipboard = {
         sync = "universal";
       };
+      commands = {
+        close_node_with_refresh.__raw = ''
+          function(state)
+            local tree = state.tree
+            local node = assert(tree:get_node())
+            require("neo-tree.sources.common.commands").close_node(state)
+            require("neo-tree.sources.manager").refresh(state.name)
+          end,
+        '';
+      };
       window = {
         mappings = {
           "<cr>" = "open";
           "o" = "open";
           "l" = "open";
           "r" = "rename";
-          "h".__raw = ''
-            function(state)
-              local tree = state.tree
-              local node = assert(tree:get_node())
-              require("neo-tree.sources.common.commands").close_node(state)
-              require("neo-tree.sources.manager").refresh(state.name)
-            end
-          '';
+          "h" = "close_node_with_refresh";
           "f" = "refresh";
           "a" = {
             command = "add";
