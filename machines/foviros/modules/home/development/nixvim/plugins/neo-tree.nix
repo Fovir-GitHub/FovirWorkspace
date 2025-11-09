@@ -57,12 +57,6 @@ in {
               require("neo-tree").close_all()
             end
           },
-          {
-            event = "file_added",
-            handler = function(file_path)
-              require("neo-tree.utils").open_file({}, file_path)
-            end
-          },
         }
       '';
     };
