@@ -1,7 +1,7 @@
-{...}: {
+{lib, ...}: {
   boot.loader = {
     systemd-boot = {
-      configurationLimit = 16;
+      configurationLimit = lib.mkDefault 16;
       editor = true;
       enable = true;
     };
