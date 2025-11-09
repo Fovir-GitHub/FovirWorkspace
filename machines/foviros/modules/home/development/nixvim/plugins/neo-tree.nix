@@ -1,13 +1,4 @@
-{...}: let
-  openFileWithForceFocus = ''
-    function(state)
-      local tree = state.tree
-      local node = assert(tree:get_node())
-      require("neo-tree.sources.filesystem.commands").open(state)
-      require("neo-tree.ui.renderer").focus_node(state, node:get_id())
-    end
-  '';
-in {
+{...}: {
   plugins.neo-tree = {
     enable = true;
 
@@ -29,12 +20,18 @@ in {
       };
       window = {
         mappings = {
-          "<cr>".__raw = openFileWithForceFocus;
-          "o".__raw = openFileWithForceFocus;
-          "l".__raw = openFileWithForceFocus;
-          "<C-\\>" = "open_vsplit";
+          "<cr>" = "open";
+          "o" = "open";
+          "l" = "open";
           "r" = "rename";
-          "h" = "close_node";
+          "h".__raw = ''
+            function(state)
+              local tree = state.tree
+              local node = assert(tree:get_node())
+              require("neo-tree.sources.common.commands").close_node(state)
+              require("neo-tree.sources.manager").refresh(state.name)
+            end
+          '';
           "f" = "refresh";
           "a" = {
             command = "add";
