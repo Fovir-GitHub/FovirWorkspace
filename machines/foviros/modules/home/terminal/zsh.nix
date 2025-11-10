@@ -31,6 +31,24 @@
 
       set -o vi
       bindkey -M viins '^H' backward-kill-word
+
+      preexec () {
+          CMD_START_DATE=$(date +%s)
+          CMD_NAME=$1
+      }
+      precmd () {
+          if ! [[ -z $CMD_START_DATE ]]; then
+              CMD_END_DATE=$(date +%s)
+              CMD_ELAPSED_TIME=$(($CMD_END_DATE - $CMD_START_DATE))
+              # Store an arbitrary threshold, in seconds.
+              CMD_NOTIFY_THRESHOLD=10
+
+              if [[ $CMD_ELAPSED_TIME -gt $CMD_NOTIFY_THRESHOLD ]]; then
+                  # Send a notification
+                  notify-send 'Job finished' "The job \"$CMD_NAME\" has finished."
+              fi
+          fi
+      }
     '';
 
     history.size = 10000;
