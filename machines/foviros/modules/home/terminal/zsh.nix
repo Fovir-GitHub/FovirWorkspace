@@ -1,4 +1,8 @@
-{...}: {
+{pkgs, ...}: let
+  iconPathPrefix = "${pkgs.beauty-line-icon-theme}/share/icons/BeautyLine/apps/scalable";
+  successIcon = "${iconPathPrefix}/gnome-info.svg";
+  failedIcon = "${iconPathPrefix}/error.svg";
+in {
   programs.zsh = {
     enable = true;
 
@@ -31,6 +35,17 @@
 
       set -o vi
       bindkey -M viins '^H' backward-kill-word
+
+      bgnotify_threshold=10
+      function bgnotify_formatted {
+        ## $1=exit_status, $2=command, $3=elapsed_time
+        local elapsed="$(( $3 % 60 ))s"
+        (( $3 < 60 ))   || elapsed="$((( $3 % 3600) / 60 ))m $elapsed"
+        (( $3 < 3600 )) || elapsed="$((  $3 / 3600 ))h $elapsed"
+
+        [ $1 -eq 0 ] && icon="${successIcon}" || icon="${failedIcon}"
+        bgnotify "took ''${elapsed}" "$2" "$icon"
+      }
     '';
 
     history.size = 10000;
