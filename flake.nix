@@ -9,8 +9,8 @@
     disko.url = "github:nix-community/disko/latest";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     hyprsession.url = "github:joshurtree/hyprsession";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim = {
       url = "github:Fovir-GitHub/nixvim";
     };
