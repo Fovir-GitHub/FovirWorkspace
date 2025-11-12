@@ -28,6 +28,7 @@ in {
       cp = "cp -v";
       mv = "mv --verbose";
       rm = "rm -v";
+      tempdir = "cd $(mktemp -d)";
     };
 
     initContent = ''
