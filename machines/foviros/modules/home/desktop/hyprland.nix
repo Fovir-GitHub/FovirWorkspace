@@ -99,6 +99,7 @@ in {
       ];
 
       exec-once = [
+        "hyprsession"
         "fcitx5-remote -r"
         "fcitx5 -d --replace &"
         "fcitx5-remote -r"
@@ -109,7 +110,6 @@ in {
         "strawberry"
         "random_wallpaper.sh"
         "syncthing --no-browser"
-        sciName
       ];
 
       general = {

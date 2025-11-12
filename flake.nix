@@ -10,6 +10,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    hyprsession.url = "github:joshurtree/hyprsession";
     nixvim = {
       url = "github:Fovir-GitHub/nixvim";
     };
