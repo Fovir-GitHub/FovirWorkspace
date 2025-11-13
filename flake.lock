@@ -446,11 +446,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1763010865,
+        "lastModified": 1763012604,
         "narHash": "sha256-0cR136NnI0IB9BPxmkFJK5j72iwUtdb2NL7NfuR3qnQ=",
         "owner": "Fovir-GitHub",
         "repo": "nixvim",
-        "rev": "dc2aaa7e694a32703edd1a4fd4a7288e75620840",
+        "rev": "e07cd34603f31b00cf93e0ad4aed91f97903c93c",
         "type": "github"
       },
       "original": {
