@@ -24,6 +24,9 @@ in {
 
       gpa = "git push --all";
       gs = "git switch";
+      gsc = "git switch --create";
+      gsd = "git switch $(git_develop_branch)";
+      gsm = "git switch $(git_main_branch)";
 
       cp = "cp -v";
       mv = "mv --verbose";
