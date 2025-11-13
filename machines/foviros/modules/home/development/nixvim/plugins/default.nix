@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./abolish.nix
     ./aerial.nix
     ./bufferline.nix
     ./cmp-conventionalcommits.nix
