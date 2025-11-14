@@ -31,7 +31,7 @@
 
     charset = utf-8
 
-    [*.{c,cpp,h,hpp,go}]
+    [*.{c,cpp,h,hpp,go,rs}]
     indent_size = 4
   '';
 }
