@@ -84,6 +84,7 @@
             function(path)
               vim.cmd("cd " .. path)
               vim.notify(path)
+              vim.cmd("TermExec cmd='" .. "cd " .. path .. "'" .. "open=0")
             end
           '';
           limit = 4;
