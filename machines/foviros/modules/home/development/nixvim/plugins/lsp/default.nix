@@ -11,6 +11,7 @@
     ./ltex.nix
     ./nil.nix
     ./pyright.nix
+    ./rust_analyzer.nix
     ./sqls.nix
     ./svelte.nix
     ./tailwindcss.nix

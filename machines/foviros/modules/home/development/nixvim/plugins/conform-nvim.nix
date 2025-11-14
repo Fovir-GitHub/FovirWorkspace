@@ -17,6 +17,7 @@
         "nix" = ["alejandra"];
         "toml" = ["taplo"];
         "java" = ["google-java-format"];
+        "rust" = ["rustfmt"];
       };
     };
   };
