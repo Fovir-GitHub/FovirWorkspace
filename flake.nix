@@ -51,6 +51,7 @@
             deadnix
             just
             sops
+            pre-commit
           ];
         };
       });

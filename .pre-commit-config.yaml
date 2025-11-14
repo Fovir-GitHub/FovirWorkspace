@@ -1,0 +1,7 @@
+repos:
+  - repo: local
+    hooks:
+      - id: values-sops-keywords
+        name: Check sops
+        entry: ./scripts/pre-commit-values-check.sh
+        language: script
