@@ -5,5 +5,6 @@
     ./nix.nix
     ./overlays.nix
     ./ssh.nix
+    ./zfs.nix
   ];
 }

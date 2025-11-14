@@ -8,7 +8,6 @@
     ../../modules/optional/kernels/cachyos-desktop.nix
     ../../modules/optional/virtualisation/podman.nix
     ../../modules/optional/virtualisation/qemu.nix
-    ../../modules/optional/zfs.nix
     ../../modules/shared
     ./modules
     ./values/hardware-configuration.nix

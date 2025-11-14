@@ -14,7 +14,6 @@ in {
     ../../modules/optional/boot-loader/limine.nix
     ../../modules/optional/kernels/cachyos-server.nix
     ../../modules/optional/virtualisation/podman.nix
-    ../../modules/optional/zfs.nix
     ../../modules/shared
     ./modules
     ./services
