@@ -25,7 +25,8 @@
         go = "go run %s",
         js = "node %s",
         ts = "npx tsx %s",
-        java = "java %s"
+        java = "java %s",
+        rs = "cargo run"
       }
 
       local filename = vim.fn.expand("%:t")
