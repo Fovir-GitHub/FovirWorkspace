@@ -1,5 +1,13 @@
 valuePath:="./machines/*/values/* ./modules/values/*"
 
+stash-values:
+  # Stash values.
+  git stash push -m "Stash Values" {{valuePath}}
+
+pop-values:
+  # Stash pop values.
+  git stash pop
+
 ea:
   # Encrypt all values of machines.
   ls {{valuePath}} | xargs -n 1 sops encrypt -i
