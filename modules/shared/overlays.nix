@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   nixpkgs = {
     overlays = [
-      (final: prev: {
-        hyprpanel = prev.hyprpanel.overrideAttrs (old: {
+      (_final: prev: {
+        hyprpanel = prev.hyprpanel.overrideAttrs (_old: {
           src = pkgs.fetchFromGitHub {
             owner = "Fovir-GitHub";
             repo = "HyprPanel";
