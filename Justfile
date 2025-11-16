@@ -27,6 +27,11 @@ cv:
   git add {{valuePath}}
   git commit -m "chore: Encrypt values."
 
+ec:
+  # Encrypt and commit values.
+  just ea
+  just cv
+
 install host target:
   # Install machine {{host}} to {{target}}.
   git add --all
