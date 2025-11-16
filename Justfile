@@ -1,10 +1,10 @@
 valuePath:="./machines/*/values/* ./modules/values/*"
 
-stash-values:
+sv:
   # Stash values.
   git stash push -m "Stash Values" {{valuePath}}
 
-pop-values:
+pv:
   # Stash pop values.
   git stash pop
 
