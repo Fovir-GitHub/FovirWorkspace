@@ -44,7 +44,7 @@
           cmd = string.format(cmd_template, filename)
         end
 
-        cmd = string.format("cd %s && %s ; cd -", file_dir, cmd)
+        cmd = string.format("cd %s && %s ; cd - > /dev/null", file_dir, cmd)
 
         vim.cmd("TermExec cmd='" .. cmd .. "'")
       else
