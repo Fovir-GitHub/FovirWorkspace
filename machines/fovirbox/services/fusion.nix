@@ -1,7 +1,7 @@
 {...}: {
   virtualisation.oci-containers.containers."fusion" = {
     image = "ghcr.io/fovir-github/fusion:main";
-    pull = "newer";
+    pull = "always";
     ports = [
       "127.0.0.1:8080:8080"
     ];
