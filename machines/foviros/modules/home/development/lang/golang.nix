@@ -3,5 +3,6 @@
     go
     gopls
     gotools
+    govulncheck
   ];
 }
