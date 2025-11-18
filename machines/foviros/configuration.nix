@@ -21,8 +21,5 @@
   ];
 
   networking = import ./values/networking.nix;
-
-  programs.zsh.enable = true;
-
   security = import ./values/security.nix;
 }
