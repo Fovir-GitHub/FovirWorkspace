@@ -1,5 +1,6 @@
 {
   imports = [
+    ./hyprshell.nix
     ./fuzzel.nix
     ./gtk.nix
     ./hyprcursor.nix
