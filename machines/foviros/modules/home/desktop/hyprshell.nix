@@ -46,7 +46,7 @@
           filter_by = [
             "current_monitor"
           ];
-          modifier = "super";
+          modifier = "alt";
           switch_workspaces = false;
         };
       };
