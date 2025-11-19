@@ -70,5 +70,11 @@
       mode = "n";
       options.desc = "Toggle File Explorer";
     }
+    {
+      key = "<leader>E";
+      action = "<cmd>Neotree filesystem reveal<cr>";
+      mode = "n";
+      options.desc = "Follow Current File";
+    }
   ];
 }
