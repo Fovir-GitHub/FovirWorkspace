@@ -1,6 +1,5 @@
 {
   imports = [
-    ./hyprshell.nix
     ./fuzzel.nix
     ./gtk.nix
     ./hyprcursor.nix
@@ -9,6 +8,7 @@
     ./hyprpanel
     ./hyprpaper.nix
     ./hyprpolkitagent.nix
+    ./hyprshell
     ./qt
     ./wl-clipboard-rs.nix
     ./xdg.nix
