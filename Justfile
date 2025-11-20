@@ -25,7 +25,7 @@ vm host:
 cv:
   # Commit all values automatically.
   git add {{valuePath}}
-  git commit -m "chore: Encrypt values."
+  git commit -m "chore: encrypt values"
 
 ec:
   # Encrypt and commit values.
