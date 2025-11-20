@@ -92,37 +92,39 @@ in {
         sciName
       ];
       general = {
+        "col.active_border" = "rgba(5e9bf388)";
+        "col.inactive_border" = "rgba(ffffff22)";
         border_size = 3;
         gaps_in = 8;
         gaps_out = 14;
-        "col.active_border" = "rgba(5e9bf388)";
-        "col.inactive_border" = "rgba(ffffff22)";
       };
       decoration = {
         active_opacity = 1.0;
-        inactive_opacity = 0.96;
         fullscreen_opacity = 1.0;
+        inactive_opacity = 0.96;
         rounding = 12;
         blur = {
           enabled = true;
-          size = 11;
-          passes = 3;
+
+          brightness = 1.0;
+          contrast = 0.9;
           ignore_opacity = false;
           new_optimizations = true;
           noise = 0.03;
-          contrast = 0.9;
-          brightness = 1.0;
+          passes = 3;
+          size = 11;
           vibrancy = 0.15;
           vibrancy_darkness = 0.1;
         };
         shadow = {
           enabled = true;
+
+          color = "rgba(00000066)";
+          ignore_window = false;
+          offset = "0, 4";
           range = 18;
           render_power = 3;
-          offset = "0, 4";
           scale = 0.97;
-          ignore_window = false;
-          color = "rgba(00000066)";
         };
       };
       input = {
@@ -133,8 +135,8 @@ in {
         hide_on_key_press = true;
       };
       windowrulev2 = [
-        "workspace special, class:^(thunderbird)$|.*strawberry.*|.*keepassxc.*|.*${sciName}.*"
         "rounding 12, class:.* "
+        "workspace special, class:^(thunderbird)$|.*strawberry.*|.*keepassxc.*|.*${sciName}.*"
       ];
       ecosystem = {
         no_donation_nag = true;
@@ -144,17 +146,17 @@ in {
         "macReal, 0.26, 0.06, 0.22, 1.00"
       ];
       animation = [
-        "windowsIn,1,3.8,macReal,popin 95%"
-        "windowsOut,1,3.0,macReal,popin"
-        "windows,1,4.5,macReal,slide"
-        "windowsMove,1,4.5,macReal,slide"
-        "workspaces,1,5.2,macReal,slide"
-        "specialWorkspace,1,5,macReal,slidevert"
+        "border,1,8,default"
+        "borderangle,0"
         "fade,1,6,macReal"
         "fadeDim,0"
         "layers,1,4.5,macReal,slide"
-        "border,1,8,default"
-        "borderangle,0"
+        "specialWorkspace,1,5,macReal,slidevert"
+        "windows,1,4.5,macReal,slide"
+        "windowsIn,1,3.8,macReal,popin 95%"
+        "windowsMove,1,4.5,macReal,slide"
+        "windowsOut,1,3.0,macReal,popin"
+        "workspaces,1,5.2,macReal,slide"
       ];
     };
   };
