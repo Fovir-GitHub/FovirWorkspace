@@ -92,35 +92,49 @@ in {
         sciName
       ];
       general = {
-        gaps_in = 3;
-        gaps_out = 0;
         border_size = 3;
-        "col.active_border" = "0xfff38ba8 0xffcba6f7 0xfff5c2e7 0xfff2cdcd";
-        "col.inactive_border" = "0x00ffffff";
+        gaps_in = 8;
+        gaps_out = 14;
+        "col.active_border" = "rgba(5e9bf388)";
+        "col.inactive_border" = "rgba(ffffff22)";
       };
-      decoration = let
-        OPACITY = 1;
-      in {
-        rounding = 16;
-        rounding_power = 4.0;
-        active_opacity = OPACITY;
-        inactive_opacity = OPACITY;
-        fullscreen_opacity = OPACITY;
+      decoration = {
+        active_opacity = 1.0;
+        inactive_opacity = 0.96;
+        fullscreen_opacity = 1.0;
+        rounding = 12;
         blur = {
           enabled = true;
+          size = 11;
+          passes = 3;
+          ignore_opacity = false;
+          new_optimizations = true;
+          noise = 0.03;
+          contrast = 0.9;
+          brightness = 1.0;
+          vibrancy = 0.15;
+          vibrancy_darkness = 0.1;
         };
         shadow = {
-          enabled = false;
+          enabled = true;
+          range = 18;
+          render_power = 3;
+          offset = "0, 4";
+          scale = 0.97;
+          ignore_window = false;
+          color = "rgba(00000066)";
         };
       };
       input = {
         numlock_by_default = true;
       };
       cursor = {
+        inactive_timeout = 4;
         hide_on_key_press = true;
       };
       windowrulev2 = [
         "workspace special, class:^(thunderbird)$|.*strawberry.*|.*keepassxc.*|.*${sciName}.*"
+        "rounding 12, class:.* "
       ];
       ecosystem = {
         no_donation_nag = true;
