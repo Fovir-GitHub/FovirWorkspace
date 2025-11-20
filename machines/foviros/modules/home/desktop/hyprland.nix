@@ -126,6 +126,22 @@ in {
         no_donation_nag = true;
         no_update_news = true;
       };
+      bezier = [
+        "macReal, 0.26, 0.06, 0.22, 1.00"
+      ];
+      animation = [
+        "windowsIn,1,3.8,macReal,popin 95%"
+        "windowsOut,1,3.0,macReal,popin"
+        "windows,1,4.5,macReal,slide"
+        "windowsMove,1,4.5,macReal,slide"
+        "workspaces,1,5.2,macReal,slide"
+        "specialWorkspace,1,5,macReal,slidevert"
+        "fade,1,6,macReal"
+        "fadeDim,0"
+        "layers,1,4.5,macReal,slide"
+        "border,1,8,default"
+        "borderangle,0"
+      ];
     };
   };
 
