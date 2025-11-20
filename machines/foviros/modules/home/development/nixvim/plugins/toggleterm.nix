@@ -3,25 +3,23 @@
     enable = true;
 
     settings = {
-      direction = "float";
-
       autochdir = true;
-      persist_size = false;
-
+      direction = "float";
       open_mapping = "[[<C-`>]]";
+      persist_size = false;
 
       float_opts = let
         scale = "0.9";
       in {
         border = "rounded";
-        width.__raw = ''
-          function(term)
-            return math.floor(vim.o.columns * ${scale})
-          end
-        '';
         height.__raw = ''
           function(term)
             return math.floor(vim.o.lines * ${scale})
+          end
+        '';
+        width.__raw = ''
+          function(term)
+            return math.floor(vim.o.columns * ${scale})
           end
         '';
       };
@@ -72,7 +70,6 @@
       action = ":lua RunCurrentFile()<CR>";
       options.desc = "Run Code";
     }
-
     {
       key = "<F5>";
       mode = "n";
