@@ -150,7 +150,7 @@ in {
         "borderangle,0"
         "fade,1,6,macReal"
         "fadeDim,0"
-        "layers,1,4.5,macReal,slide"
+        "layers,1,4.5,macReal,slide top"
         "specialWorkspace,1,5,macReal,slidevert"
         "windows,1,4.5,macReal,slide"
         "windowsIn,1,3.8,macReal,popin 95%"
