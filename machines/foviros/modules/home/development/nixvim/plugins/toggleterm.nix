@@ -10,8 +10,20 @@
 
       open_mapping = "[[<C-`>]]";
 
-      float_opts = {
+      float_opts = let
+        scale = "0.9";
+      in {
         border = "rounded";
+        width.__raw = ''
+          function(term)
+            return math.floor(vim.o.columns * ${scale})
+          end
+        '';
+        height.__raw = ''
+          function(term)
+            return math.floor(vim.o.lines * ${scale})
+          end
+        '';
       };
     };
   };
