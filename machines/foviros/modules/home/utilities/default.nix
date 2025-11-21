@@ -6,6 +6,7 @@
     ./libreoffice.nix
     ./localsend.nix
     ./nemo.nix
+    ./openssl.nix
     ./qalculate.nix
     ./rime.nix
     ./screenshot.nix
