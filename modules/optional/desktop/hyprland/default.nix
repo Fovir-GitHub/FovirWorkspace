@@ -1,4 +1,7 @@
-{username}: {
+{
+  username,
+  avatar-path,
+}: {
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -9,7 +12,7 @@
       ./hyprland.nix
       ./hyprlock.nix
       ./hyprpaper.nix
-      ./hyprpanel
+      (import ./hyprpanel {inherit avatar-path;})
       ./hyprshell
     ];
 
