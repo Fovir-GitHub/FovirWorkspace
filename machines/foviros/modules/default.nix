@@ -1,7 +1,7 @@
-{
+{username}: {
   imports = [
+    (import ./software {inherit username;})
     ./desktop
-    ./software
     ./system
   ];
 }
