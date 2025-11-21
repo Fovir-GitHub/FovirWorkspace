@@ -13,8 +13,8 @@
       url = "github:H3rmt/hyprshell?ref=hyprshell-release";
       inputs.hyprland.follows = "nixpkgs";
     };
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-25-05.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim = {
       url = "github:Fovir-GitHub/nixvim";
     };
