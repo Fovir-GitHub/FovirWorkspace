@@ -14,6 +14,7 @@
     ./modules
     ./values/hardware-configuration.nix
     (import ../../modules/optional/desktop/home-manager/qt {username = username;})
+    (import ../../modules/optional/desktop/hyprland {username = username;})
     inputs.chaotic.nixosModules.default
     inputs.home-manager.nixosModules.home-manager
     {

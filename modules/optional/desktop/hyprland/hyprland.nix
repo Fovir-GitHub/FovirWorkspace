@@ -3,7 +3,7 @@
 
   screenshotCommand = "flameshot gui";
   ocrCommand = "screenshot-ocr.sh";
-  sciName = import ../../../values/sci-name.nix;
+  sciName = "test";
 in {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -22,7 +22,6 @@ in {
       bind = [
         "$mod,T,exec,kitty" # Run `kitty`.
         ",F1,exec,kitty" # Run `kitty`.
-        "$mod,P,exec,hyprlock" # Lock.
         "ALT,SPACE,exec,fuzzel" # Run `fuzzel`.
         # Run area screenshot.
         "$mod,S,exec,${screenshotCommand}"
@@ -82,7 +81,6 @@ in {
         "fcitx5-remote -r"
         "fcitx5 -d --replace &"
         "fcitx5-remote -r"
-        "hyprpaper"
         "disable_touchpad.sh"
         "thunderbird"
         "keepassxc"
