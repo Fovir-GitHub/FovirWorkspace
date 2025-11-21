@@ -7,6 +7,10 @@
     xwayland.enable = true;
   };
 
+  imports = [
+    (import ../home-manager/qt {inherit username;})
+  ];
+
   home-manager.users.${username} = {pkgs, ...}: {
     imports = [
       (import ./hyprpanel {inherit avatar-path;})
