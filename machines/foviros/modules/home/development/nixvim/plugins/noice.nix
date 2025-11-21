@@ -4,11 +4,9 @@
 
     settings = {
       lsp.enabled = true;
-
       presets = {
         command_palette = true;
       };
-
       views = {
         cmdline_popup = {
           size = {
