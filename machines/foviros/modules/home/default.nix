@@ -2,7 +2,6 @@
   imports = [
     ./browsers
     ./cybersecurity
-    ./desktop
     ./development
     ./games
     ./hardwares
