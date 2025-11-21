@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   nixpkgs = {
     overlays = [
       (_final: prev: {
@@ -11,6 +15,7 @@
           };
         });
       })
+      inputs.nix-vscode-extensions.overlays.default
     ];
   };
 }

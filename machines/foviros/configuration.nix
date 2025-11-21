@@ -19,7 +19,6 @@
     ./values/hardware-configuration.nix
     inputs.chaotic.nixosModules.default
     inputs.home-manager.nixosModules.home-manager
-    {nixpkgs.overlays = [inputs.nix-vscode-extensions.overlays.default];}
   ];
 
   networking = import ./values/networking.nix;
