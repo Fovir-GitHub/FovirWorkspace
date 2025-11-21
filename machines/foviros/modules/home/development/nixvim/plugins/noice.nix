@@ -8,6 +8,15 @@
       presets = {
         command_palette = true;
       };
+
+      views = {
+        cmdline_popup = {
+          size = {
+            width = "50%";
+            height = "auto";
+          };
+        };
+      };
     };
   };
 
