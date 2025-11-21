@@ -9,7 +9,6 @@
     ./hyprpaper.nix
     ./hyprpolkitagent.nix
     ./hyprshell
-    ./qt
     ./wl-clipboard-rs.nix
     ./xdg.nix
   ];
