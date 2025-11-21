@@ -12,5 +12,6 @@
     ./screenshot.nix
     ./syncthing.nix
     ./thunderbird.nix
+    ./wl-clipboard-rs.nix
   ];
 }
