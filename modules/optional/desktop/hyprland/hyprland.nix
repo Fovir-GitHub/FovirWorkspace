@@ -22,7 +22,6 @@ in {
       bind = [
         "$mod,T,exec,kitty" # Run `kitty`.
         ",F1,exec,kitty" # Run `kitty`.
-        "ALT,SPACE,exec,fuzzel" # Run `fuzzel`.
         # Run area screenshot.
         "$mod,S,exec,${screenshotCommand}"
         ",Print,exec,${screenshotCommand}"

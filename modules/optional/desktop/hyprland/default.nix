@@ -9,10 +9,11 @@
 
   home-manager.users.${username} = {pkgs, ...}: {
     imports = [
+      (import ./hyprpanel {inherit avatar-path;})
+      ./fuzzel.nix
       ./hyprland.nix
       ./hyprlock.nix
       ./hyprpaper.nix
-      (import ./hyprpanel {inherit avatar-path;})
       ./hyprshell
     ];
 
