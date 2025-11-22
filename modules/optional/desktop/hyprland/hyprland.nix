@@ -60,9 +60,6 @@ in {
         ",XF86MonBrightnessDown,exec,brightnessctl set 5%-"
       ];
       exec-once = [
-        "fcitx5-remote -r"
-        "fcitx5 -d --replace &"
-        "fcitx5-remote -r"
         "disable_touchpad.sh"
         "thunderbird"
         "keepassxc"
