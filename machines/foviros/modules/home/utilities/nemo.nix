@@ -16,7 +16,7 @@
   };
 
   xdg.desktopEntries.nemo = {
-    name = "Nemo";
     exec = "${config.home.homeDirectory}/.local/bin/run-nemo";
+    name = "Nemo";
   };
 }
