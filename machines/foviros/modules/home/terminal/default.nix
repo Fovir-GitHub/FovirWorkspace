@@ -8,7 +8,6 @@
     ./fastfetch
     ./fd.nix
     ./kitty.nix
-    ./path.nix
     ./rename.nix
     ./ripgrep.nix
     ./rsync.nix

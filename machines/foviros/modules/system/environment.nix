@@ -2,6 +2,7 @@
   time.timeZone = "Asia/Kuala_Lumpur";
 
   environment = {
+    localBinInPath = true;
     variables = {
       TERMINAL = "kitty";
       EDITOR = "nvim";
