@@ -1,6 +1,11 @@
-{...}: let
-  monitor_name = "eDP-1";
-in {
+{monitor-name}: {pkgs, ...}: {
+  home.packages = with pkgs; [
+    brightnessctl
+    pamixer
+    pavucontrol
+    pulseaudio
+  ];
+
   wayland.windowManager.hyprland = {
     enable = true;
 
@@ -10,7 +15,7 @@ in {
       variables = ["--all"];
     };
     settings = {
-      monitor = "${monitor_name},preferred,auto,auto";
+      monitor = "${monitor-name},preferred,auto,auto";
       xwayland.force_zero_scaling = true;
       "$mod" = "SUPER";
       bind = [
