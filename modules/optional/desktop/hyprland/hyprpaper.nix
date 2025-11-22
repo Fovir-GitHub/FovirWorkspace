@@ -10,18 +10,13 @@
       default_wallpaper = "${config.xdg.userDirs.pictures}/Wallpaper/0.png";
     in {
       ipc = "on";
-      preload = [
-        default_wallpaper
-      ];
+      preload = [default_wallpaper];
       wallpaper = ",${default_wallpaper}";
     };
   };
 
   home = {
-    packages = [
-      pkgs.hyprpaper
-    ];
-
+    packages = [pkgs.hyprpaper];
     file."Pictures/Wallpaper" = {
       force = true;
       recursive = true;
