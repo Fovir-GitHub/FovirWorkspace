@@ -42,9 +42,6 @@ in {
         "$mod,F,fullscreen,0"
         # Toggle float window.
         "$mod,SPACE,togglefloating"
-        # Toupad operations.
-        "ALT,T,exec,disable_touchpad.sh"
-        "ALT_SHIFT,T,exec,enable_touchpad.sh"
       ];
       bindm = [
         "$mod,mouse:272,movewindow" # Move window.
@@ -60,7 +57,6 @@ in {
         ",XF86MonBrightnessDown,exec,brightnessctl set 5%-"
       ];
       exec-once = [
-        "disable_touchpad.sh"
         "random_wallpaper.sh"
         "syncthing --no-browser"
       ];
@@ -131,23 +127,5 @@ in {
         "workspaces,1,5.2,macReal,slide"
       ];
     };
-  };
-
-  home.file.".local/bin/disable_touchpad.sh" = {
-    text = ''
-      #!/usr/bin/env bash
-      hyprctl keyword "device[uniw0001:00-093a:0274-touchpad]:enabled" false
-      notify-send "Touchpad Disabled!"
-    '';
-    executable = true;
-  };
-
-  home.file.".local/bin/enable_touchpad.sh" = {
-    text = ''
-      #!/usr/bin/env bash
-      hyprctl keyword "device[uniw0001:00-093a:0274-touchpad]:enabled" true
-      notify-send "Touchpad Enabled!"
-    '';
-    executable = true;
   };
 }
