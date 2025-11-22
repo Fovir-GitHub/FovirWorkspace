@@ -62,7 +62,6 @@ in {
       exec-once = [
         "disable_touchpad.sh"
         "keepassxc"
-        "strawberry"
         "random_wallpaper.sh"
         "syncthing --no-browser"
       ];
@@ -111,7 +110,7 @@ in {
       };
       windowrulev2 = [
         "rounding 12, class:.* "
-        "workspace special, class:.*strawberry.*|.*keepassxc.*"
+        "workspace special, class:.*keepassxc.*"
       ];
       ecosystem = {
         no_donation_nag = true;
