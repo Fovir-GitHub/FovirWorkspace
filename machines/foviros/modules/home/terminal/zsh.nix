@@ -7,13 +7,11 @@ in {
     enable = true;
 
     autocd = true;
-    enableCompletion = true;
-
     autosuggestion.enable = true;
-    syntaxHighlighting.enable = true;
-
     defaultKeymap = "viins";
-
+    enableCompletion = true;
+    history.size = 10000;
+    syntaxHighlighting.enable = true;
     shellAliases = {
       ls = "eza -alF --color=always --group --group-directories-first --icons=always"; # Preferred listing.
       la = "eza -a --color=always --group-directories-first --icons=always"; # All files and dirs.
@@ -52,14 +50,12 @@ in {
       }
     '';
 
-    history.size = 10000;
-
     oh-my-zsh = {
       enable = true;
 
       plugins = [
-        "git"
         "bgnotify"
+        "git"
       ];
     };
   };

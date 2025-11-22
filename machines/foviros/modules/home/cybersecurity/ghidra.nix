@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    ghidra
-  ];
+  home.packages = [pkgs.ghidra];
 }

@@ -6,7 +6,6 @@
       indent = {
         char = "▏";
         smart_indent_cap = true;
-
         highlight = [
           "RainbowDelimiterRed"
           "RainbowDelimiterYellow"
@@ -17,13 +16,7 @@
           "RainbowDelimiterCyan"
         ];
       };
-
-      exclude = {
-        filetypes = [
-          "dashboard"
-        ];
-      };
-
+      exclude.filetypes = ["dashboard"];
       scope = {
         enabled = true;
         show_exact_scope = true;

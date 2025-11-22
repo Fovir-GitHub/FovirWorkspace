@@ -3,10 +3,10 @@
     packages = with pkgs; [
       grim
       jq
+      kooha
       slurp
       swappy
       tesseract
-      kooha
     ];
     file.".local/bin/screenshot-ocr" = {
       executable = true;
@@ -24,11 +24,11 @@
     settings = {
       General = {
         disabledTrayIcon = true;
-        startupLaunch = true;
-        showStartupLaunchMessage = false;
         savePath = "/home/fovir/Pictures/Screenshots";
         savePathFixed = true;
         showDesktopNotification = false;
+        showStartupLaunchMessage = false;
+        startupLaunch = true;
       };
     };
   };

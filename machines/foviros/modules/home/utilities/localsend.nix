@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    localsend
-  ];
+  home.packages = [pkgs.localsend];
 }

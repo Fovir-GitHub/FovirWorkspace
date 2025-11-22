@@ -4,21 +4,21 @@
 
     settings = {
       position = {
-        relative_to = "win";
         anchor = "topcenter";
-        vertical_offset = 0;
         horizontal_offset = 0;
         max_win_height = 10;
         max_win_width = 0.5;
+        relative_to = "win";
+        vertical_offset = 0;
       };
       style = {
+        border = "rounded";
+        hide_buffer_id = true;
+        padding = 1;
         path = "tail_dir";
         path_abbreviation = "none";
-        border = "rounded";
-        separator = " ";
         prefix = "…";
-        padding = 1;
-        hide_buffer_id = true;
+        separator = " ";
         devicons = {
           enabled = true;
           colored = true;
@@ -54,9 +54,7 @@
         "fugitive"
         "qf"
       ];
-      filter = {
-        unlisted = true;
-      };
+      filter.unlisted = true;
     };
   };
 }

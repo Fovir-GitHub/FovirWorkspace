@@ -5,13 +5,10 @@
 
     folding = true;
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.passthru.allGrammars;
-
     settings = {
       auto_install = true;
       indent.enable = true;
-      highlight = {
-        enable = true;
-      };
+      highlight.enable = true;
     };
   };
 

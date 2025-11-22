@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    dosbox
-  ];
+  home.packages = [pkgs.dosbox];
 }

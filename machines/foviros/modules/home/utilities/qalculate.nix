@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    qalculate-gtk
-  ];
+  home.packages = [pkgs.qalculate-gtk];
 }

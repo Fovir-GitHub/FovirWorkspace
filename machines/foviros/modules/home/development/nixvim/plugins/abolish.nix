@@ -1,5 +1,3 @@
 {...}: {
-  plugins.abolish = {
-    enable = true;
-  };
+  plugins.abolish.enable = true;
 }

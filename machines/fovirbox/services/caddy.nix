@@ -19,7 +19,6 @@
         max_header_size 10240MB
       }
     '';
-
     virtualHosts = import ../values/caddy-virtual-hosts.nix;
   };
 }

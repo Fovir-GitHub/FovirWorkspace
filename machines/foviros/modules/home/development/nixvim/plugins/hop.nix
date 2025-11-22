@@ -2,9 +2,7 @@
   plugins.hop = {
     enable = true;
 
-    settings = {
-      case_insensitive = true;
-    };
+    settings.case_insensitive = true;
   };
 
   keymaps = [

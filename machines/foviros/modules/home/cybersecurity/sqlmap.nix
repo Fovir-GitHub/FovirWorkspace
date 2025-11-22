@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    sqlmap
-  ];
+  home.packages = [pkgs.sqlmap];
 }

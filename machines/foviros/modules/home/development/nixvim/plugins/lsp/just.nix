@@ -1,5 +1,3 @@
 {...}: {
-  plugins.lsp.servers.just = {
-    enable = true;
-  };
+  plugins.lsp.servers.just.enable = true;
 }

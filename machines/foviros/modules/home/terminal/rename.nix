@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    rename
-  ];
+  home.packages = [pkgs.rename];
 }

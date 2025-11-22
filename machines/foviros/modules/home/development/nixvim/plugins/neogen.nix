@@ -2,8 +2,6 @@
   plugins.neogen = {
     enable = true;
 
-    settings = {
-      snippet_engine = "luasnip";
-    };
+    settings.snippet_engine = "luasnip";
   };
 }

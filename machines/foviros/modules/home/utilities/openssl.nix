@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    openssl
-  ];
+  home.packages = [pkgs.openssl];
 }

@@ -1,5 +1,3 @@
 {...}: {
-  plugins.lsp.servers.pyright = {
-    enable = true;
-  };
+  plugins.lsp.servers.pyright.enable = true;
 }

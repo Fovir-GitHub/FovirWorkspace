@@ -1,5 +1,3 @@
 {...}: {
-  plugins.lsp.servers.html = {
-    enable = true;
-  };
+  plugins.lsp.servers.html.enable = true;
 }

@@ -1,5 +1,3 @@
 {...}: {
-  plugins.lsp.servers.yamlls = {
-    enable = true;
-  };
+  plugins.lsp.servers.yamlls.enable = true;
 }

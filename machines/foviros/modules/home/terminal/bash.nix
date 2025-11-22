@@ -8,22 +8,17 @@
     enable = true;
 
     package = pkgs.bash;
-
     enableCompletion = true;
-
     initExtra = ''
       set -o vi
       eval "$(starship init bash)"
     '';
-
     shellAliases = {
       ls = "eza -alF --color=always --group --group-directories-first --icons=always"; # Preferred listing.
       la = "eza -a --color=always --group-directories-first --icons=always"; # All files and dirs.
       ll = "eza -l --color=always --group-directories-first --icons=always"; # Long format.
       lt = "eza -aT --color=always --group-directories-first --icons=always"; # Tree listing.
-
       open = "xdg-open"; # Open.
-
       ga = "git add";
       gaa = "git add --all";
       gc = "git commit --verbose";
@@ -32,7 +27,6 @@
       gd = "git diff";
       gb = "git branch";
       gm = "git merge";
-
       ".." = "cd ../";
       "..." = "cd ../..";
       "...." = "cd ../../..";

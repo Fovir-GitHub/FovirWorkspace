@@ -2,9 +2,7 @@
   plugins.cmp = {
     enable = true;
 
-    # Completion sources.
     autoEnableSources = true;
-
     filetype = {
       c = {
         sources = [
@@ -13,7 +11,6 @@
           {name = "luasnip";}
         ];
       };
-
       cpp = {
         sources = [
           {name = "nvim_lsp";}
@@ -21,7 +18,6 @@
           {name = "luasnip";}
         ];
       };
-
       rust = {
         sources = [
           {name = "nvim_lsp";}
@@ -29,7 +25,6 @@
           {name = "luasnip";}
         ];
       };
-
       go = {
         sources = [
           {name = "nvim_lsp";}
@@ -37,7 +32,6 @@
           {name = "luasnip";}
         ];
       };
-
       html = {
         sources = [
           {name = "nvim_lsp";}
@@ -47,7 +41,6 @@
           {name = "buffer";}
         ];
       };
-
       gitcommit = {
         sources = [
           {name = "conventionalcommits";}

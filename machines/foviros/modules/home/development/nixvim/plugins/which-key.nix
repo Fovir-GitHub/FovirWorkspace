@@ -2,8 +2,6 @@
   plugins.which-key = {
     enable = true;
 
-    settings = {
-      preset = "helix";
-    };
+    settings.preset = "helix";
   };
 }

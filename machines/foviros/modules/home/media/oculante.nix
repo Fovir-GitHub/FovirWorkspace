@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    oculante
-  ];
+  home.packages = [pkgs.oculante];
 }

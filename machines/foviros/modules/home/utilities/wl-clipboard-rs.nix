@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    wl-clipboard-rs
-  ];
+  home.packages = [pkgs.wl-clipboard-rs];
 }

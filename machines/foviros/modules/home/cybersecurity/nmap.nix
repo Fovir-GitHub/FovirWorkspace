@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    nmap
-  ];
+  home.packages = [pkgs.nmap];
 }

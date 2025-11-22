@@ -3,9 +3,7 @@
     enable = true;
     autoLoad = true;
 
-    settings = {
-      need = 2;
-    };
+    settings.need = 2;
   };
 
   keymaps = [

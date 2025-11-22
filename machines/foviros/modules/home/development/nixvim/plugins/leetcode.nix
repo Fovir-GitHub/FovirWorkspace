@@ -4,12 +4,8 @@
 
     settings = {
       lang = "java";
-      storage = {
-        home = "~/Projects/leetcode";
-      };
-      picker = {
-        provider = "telescope";
-      };
+      storage.home = "~/Projects/leetcode";
+      picker.provider = "telescope";
     };
   };
 }

@@ -1,5 +1,3 @@
 {...}: {
-  plugins.cmp-conventionalcommits = {
-    enable = true;
-  };
+  plugins.cmp-conventionalcommits.enable = true;
 }

@@ -1,35 +1,35 @@
 {pkgs, ...}: {
   programs.vscode = {
     enable = true;
+
     package = pkgs.vscodium;
     profiles.default = {
       extensions = with pkgs.vscode-marketplace; [
+        albert.tabout
         catppuccin.catppuccin-vsc
         catppuccin.catppuccin-vsc-icons
-        vscodevim.vim
-        jock.svg
-        albert.tabout
         esbenp.prettier-vscode
+        jock.svg
+        vscodevim.vim
       ];
-
       enableUpdateCheck = false;
       enableExtensionUpdateCheck = false;
       userSettings = {
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
         "editor.fontFamily" = "JetBrainsMono Nerd Font Mono";
         "editor.fontLigatures" = true;
+        "editor.fontSize" = 16;
+        "editor.formatOnPaste" = true;
+        "editor.formatOnSave" = true;
+        "editor.formatOnType" = true;
+        "editor.lineNumbers" = "relative";
         "editor.wordWrap" = "on";
+        "editor.wrappingStrategy" = "advanced";
+        "svg.preview.autoShow" = true;
         "vim.highlightedyank.enable" = true;
         "vim.useSystemClipboard" = true;
         "workbench.colorTheme" = "Catppuccin Mocha";
         "workbench.iconTheme" = "catppuccin-mocha";
-        "svg.preview.autoShow" = true;
-        "editor.formatOnSave" = true;
-        "editor.formatOnPaste" = true;
-        "editor.formatOnType" = true;
-        "editor.fontSize" = 16;
-        "editor.wrappingStrategy" = "advanced";
-        "editor.defaultFormatter" = "esbenp.prettier-vscode";
-        "editor.lineNumbers" = "relative";
       };
     };
   };

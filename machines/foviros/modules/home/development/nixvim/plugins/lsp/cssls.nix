@@ -1,5 +1,3 @@
 {...}: {
-  plugins.lsp.servers.cssls = {
-    enable = true;
-  };
+  plugins.lsp.servers.cssls.enable = true;
 }

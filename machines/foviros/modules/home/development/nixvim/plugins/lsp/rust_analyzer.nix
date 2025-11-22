@@ -5,10 +5,6 @@
     installCargo = false;
     installRustc = false;
     installRustfmt = false;
-    settings = {
-      cargo = {
-        allFeatures = true;
-      };
-    };
+    settings.cargo.allFeatures = true;
   };
 }

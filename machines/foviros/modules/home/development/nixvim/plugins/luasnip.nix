@@ -1,13 +1,10 @@
 {...}: {
-  plugins.luasnip = {
-    enable = true;
+  plugins = {
+    cmp_luasnip.enable = true;
+    luasnip = {
+      enable = true;
 
-    settings = {
-      enable_autosnippets = true;
+      settings.enable_autosnippets = true;
     };
-  };
-
-  plugins.cmp_luasnip = {
-    enable = true;
   };
 }

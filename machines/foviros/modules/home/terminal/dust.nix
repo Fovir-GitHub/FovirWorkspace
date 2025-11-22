@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    dust
-  ];
+  home.packages = [pkgs.dust];
 }

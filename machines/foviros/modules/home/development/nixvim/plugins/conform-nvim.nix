@@ -14,10 +14,10 @@
         "c" = ["clang_format"];
         "cpp" = ["clang_format"];
         "go" = ["gofmt"];
-        "nix" = ["alejandra"];
-        "toml" = ["taplo"];
         "java" = ["google-java-format"];
+        "nix" = ["alejandra"];
         "rust" = ["rustfmt"];
+        "toml" = ["taplo"];
       };
     };
   };

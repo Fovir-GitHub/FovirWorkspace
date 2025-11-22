@@ -4,20 +4,12 @@
 
     settings = {
       change_to_vcs_root = true;
+      hide.statusline = false;
       shortcut_type = "number";
       theme = "hyper";
-
-      hide = {
-        statusline = false;
-      };
-
       config = {
         packages.enable = false;
-
-        mru = {
-          enable = false;
-        };
-
+        mru.enable = false;
         shortcut = [
           {
             action.__raw = ''
@@ -29,7 +21,6 @@
             icon = "󰮳 ";
             key = "r";
           }
-
           {
             action.__raw = ''
               function(path)
@@ -40,7 +31,6 @@
             icon = " ";
             key = "n";
           }
-
           {
             action.__raw = ''
               function(path)
@@ -89,10 +79,7 @@
           '';
           limit = 4;
         };
-
-        footer = [
-          " Coding or Dying "
-        ];
+        footer = [" Coding or Dying "];
       };
     };
   };

@@ -7,10 +7,8 @@
       "bibtex"
       "latex"
     ];
-
     settings = {
       checkFrequency = "save";
-
       enabled = [
         "bibtex"
         "latex"

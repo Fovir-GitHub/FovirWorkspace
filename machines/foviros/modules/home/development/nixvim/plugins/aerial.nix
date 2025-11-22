@@ -7,9 +7,7 @@
       filter_kind = false;
       show_guides = true;
 
-      layout = {
-        default_direction = "right";
-      };
+      layout.default_direction = "right";
     };
   };
 }

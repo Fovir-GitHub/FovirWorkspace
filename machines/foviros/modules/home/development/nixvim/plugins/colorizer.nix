@@ -5,9 +5,9 @@
     settings = {
       filetypes = [
         "css"
+        "html"
         "javascript"
         "javascriptreact"
-        "html"
       ];
 
       user_default_options = {

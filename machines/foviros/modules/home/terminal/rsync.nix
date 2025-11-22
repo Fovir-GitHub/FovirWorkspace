@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    rsync
-  ];
+  home.packages = [pkgs.rsync];
 }

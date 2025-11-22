@@ -1,5 +1,3 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    dsniff
-  ];
+  home.packages = [pkgs.dsniff];
 }
