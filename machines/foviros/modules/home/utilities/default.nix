@@ -8,7 +8,6 @@
     ./nemo.nix
     ./openssl.nix
     ./qalculate.nix
-    ./rime.nix
     ./screenshot.nix
     ./syncthing.nix
     ./thunderbird.nix
