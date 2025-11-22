@@ -61,7 +61,6 @@ in {
       ];
       exec-once = [
         "disable_touchpad.sh"
-        "thunderbird"
         "keepassxc"
         "strawberry"
         "random_wallpaper.sh"
@@ -112,7 +111,7 @@ in {
       };
       windowrulev2 = [
         "rounding 12, class:.* "
-        "workspace special, class:^(thunderbird)$|.*strawberry.*|.*keepassxc.*"
+        "workspace special, class:.*strawberry.*|.*keepassxc.*"
       ];
       ecosystem = {
         no_donation_nag = true;
