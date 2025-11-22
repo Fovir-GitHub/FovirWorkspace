@@ -8,6 +8,7 @@
   };
 
   imports = [
+    (import ../fcitx5.nix {inherit username;})
     (import ../home-manager/gtk.nix {inherit username;})
     (import ../home-manager/qt {inherit username;})
     (import ../home-manager/xdg.nix {inherit username;})
