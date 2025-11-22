@@ -13,4 +13,7 @@
       };
     };
   };
+  wayland.windowManager.hyprland.settings.bind = [
+    "$mod,N,exec,neovide"
+  ];
 }
