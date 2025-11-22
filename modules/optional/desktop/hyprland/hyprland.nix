@@ -16,7 +16,6 @@ in {
       };
       "$mod" = "SUPER";
       bind = [
-        "$mod,E,exec,nemo" # Run `Nemo`.
         "$mod,Q,killactive" # Kill current process.
         # Move focus.
         "$mod,H,movefocus,l"

@@ -14,9 +14,9 @@
     };
     packages = [pkgs.nemo-with-extensions];
   };
-
   xdg.desktopEntries.nemo = {
     exec = "${config.home.homeDirectory}/.local/bin/run-nemo";
     name = "Nemo";
   };
+  wayland.windowManager.hyprland.settings.bind = ["$mod,E,exec,nemo"];
 }
