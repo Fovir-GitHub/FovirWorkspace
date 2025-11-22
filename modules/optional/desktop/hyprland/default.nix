@@ -12,13 +12,13 @@
     (import ../home-manager/gtk.nix {inherit username;})
     (import ../home-manager/qt {inherit username;})
     (import ../home-manager/xdg.nix {inherit username;})
+    (import ../home-manager/fuzzel.nix {inherit username;})
     ../../fonts.nix
   ];
 
   home-manager.users.${username} = {pkgs, ...}: {
     imports = [
       (import ./hyprpanel {inherit avatar-path;})
-      ./fuzzel.nix
       ./hyprland.nix
       ./hyprlock.nix
       ./hyprpaper.nix
