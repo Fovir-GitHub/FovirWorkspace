@@ -1,5 +1,7 @@
-{...}: {
-  programs.kitty = {
+{...}: let
+  kitty = "kitty";
+in {
+  programs.${kitty} = {
     enable = true;
 
     enableGitIntegration = true;
@@ -19,4 +21,8 @@
     };
     themeFile = "Catppuccin-Mocha";
   };
+  wayland.windowManager.hyprland.settings.bind = [
+    "$mod,T,exec,${kitty}"
+    ",F1,exec,${kitty}"
+  ];
 }

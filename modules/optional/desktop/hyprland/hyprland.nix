@@ -19,8 +19,6 @@ in {
       };
       "$mod" = "SUPER";
       bind = [
-        "$mod,T,exec,kitty" # Run `kitty`.
-        ",F1,exec,kitty" # Run `kitty`.
         # Run area screenshot.
         "$mod,S,exec,${screenshotCommand}"
         ",Print,exec,${screenshotCommand}"
