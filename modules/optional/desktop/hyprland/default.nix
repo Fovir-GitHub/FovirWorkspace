@@ -15,8 +15,8 @@
     (import ../home-manager/hardwares.nix {inherit username;})
     (import ../home-manager/qt {inherit username;})
     (import ../home-manager/xdg.nix {inherit username;})
-    ../../desktop-services
     ../../fonts.nix
+    ../services
   ];
 
   home-manager.users.${username} = {pkgs, ...}: {
