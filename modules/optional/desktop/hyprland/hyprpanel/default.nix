@@ -15,9 +15,7 @@
         force = true;
         source = ./config.json;
       };
-      "${config.xdg.configHome}/hyprpanel/profile.png" = {
-        source = avatar-path;
-      };
+      "${config.xdg.configHome}/hyprpanel/profile.png".source = avatar-path;
     };
     packages = with pkgs; [
       libnotify
