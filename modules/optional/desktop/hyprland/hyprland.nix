@@ -1,7 +1,5 @@
 {...}: let
   monitor_name = "eDP-1";
-
-  ocrCommand = "screenshot-ocr.sh";
 in {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -18,8 +16,6 @@ in {
       };
       "$mod" = "SUPER";
       bind = [
-        # Run OCR screenshot.
-        "$mod,O,exec,${ocrCommand}"
         "$mod,N,exec,neovide" # Run `Neovide`.
         "$mod,E,exec,nemo" # Run `Nemo`.
         "$mod,Q,killactive" # Kill current process.
