@@ -1,7 +1,6 @@
 {...}: let
   monitor_name = "eDP-1";
 
-  screenshotCommand = "flameshot gui";
   ocrCommand = "screenshot-ocr.sh";
 in {
   wayland.windowManager.hyprland = {
@@ -19,9 +18,6 @@ in {
       };
       "$mod" = "SUPER";
       bind = [
-        # Run area screenshot.
-        "$mod,S,exec,${screenshotCommand}"
-        ",Print,exec,${screenshotCommand}"
         # Run OCR screenshot.
         "$mod,O,exec,${ocrCommand}"
         "$mod,N,exec,neovide" # Run `Neovide`.

@@ -13,4 +13,10 @@
       };
     };
   };
+  wayland.windowManager.hyprland.settings.bind = let
+    screenshot-command = "flameshot gui";
+  in [
+    "$mod,S,exec,${screenshot-command}"
+    ",Print,exec,${screenshot-command}"
+  ];
 }
