@@ -39,12 +39,6 @@
           XDG_SCREENSHOTS_DIR = "${config.xdg.userDirs.pictures}/Screenshots";
         };
       };
-      desktopEntries = {
-        nemo = {
-          name = "Nemo";
-          exec = "${config.home.homeDirectory}/.local/bin/run-nemo.sh";
-        };
-      };
       mimeApps = let
         browser = ["firefox-devedition.desktop"];
         filemanager = ["nemo.desktop"];
@@ -86,16 +80,6 @@
     home.activation.createRunNemo = lib.hm.dag.entryAfter ["writeBoundary"] ''
       mkdir -p ${config.home.homeDirectory}/.local/bin
     '';
-
-    home.file.".local/bin/run-nemo.sh" = {
-      text = ''
-        #!/usr/bin/env bash
-
-        ( nohup nemo $1 >/dev/null 2>&1 & ) >/dev/null 2>&1
-      '';
-
-      executable = true;
-    };
 
     home.activation.createProjects = lib.hm.dag.entryAfter ["writeBoundary"] ''
       mkdir -p $HOME/Projects

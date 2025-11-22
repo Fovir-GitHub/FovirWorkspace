@@ -1,5 +1,22 @@
-{pkgs, ...}: {
-  home.packages = with pkgs; [
-    nemo-with-extensions
-  ];
+{
+  config,
+  pkgs,
+  ...
+}: {
+  home = {
+    file.".local/bin/run-nemo" = {
+      executable = true;
+      text = ''
+        #!/usr/bin/env bash
+
+        ( nohup nemo $1 >/dev/null 2>&1 & ) >/dev/null 2>&1
+      '';
+    };
+    packages = [pkgs.nemo-with-extensions];
+  };
+
+  xdg.desktopEntries.nemo = {
+    name = "Nemo";
+    exec = "${config.home.homeDirectory}/.local/bin/run-nemo";
+  };
 }
