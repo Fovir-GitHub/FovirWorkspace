@@ -45,10 +45,6 @@ in {
         # Toupad operations.
         "ALT,T,exec,disable_touchpad.sh"
         "ALT_SHIFT,T,exec,enable_touchpad.sh"
-        # Key binds of `playerctl`.
-        "CTRL_ALT,SPACE,exec,playerctl play-pause"
-        "CTRL_ALT,N,exec,playerctl next"
-        "CTRL_ALT,P,exec,playerctl previous"
       ];
       bindm = [
         "$mod,mouse:272,movewindow" # Move window.
