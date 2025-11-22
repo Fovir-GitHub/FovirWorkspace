@@ -19,6 +19,7 @@
       };
       imports = [
         ../../../../modules/optional/mutable-files.nix
+        ../../../../modules/optional/activations.nix
         ../home
       ];
     };

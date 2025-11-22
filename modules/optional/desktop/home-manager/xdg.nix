@@ -76,13 +76,5 @@
         };
       };
     };
-
-    home.activation.createRunNemo = lib.hm.dag.entryAfter ["writeBoundary"] ''
-      mkdir -p ${config.home.homeDirectory}/.local/bin
-    '';
-
-    home.activation.createProjects = lib.hm.dag.entryAfter ["writeBoundary"] ''
-      mkdir -p $HOME/Projects
-    '';
   };
 }
