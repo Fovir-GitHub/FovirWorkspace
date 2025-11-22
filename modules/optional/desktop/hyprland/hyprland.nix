@@ -11,9 +11,7 @@ in {
     };
     settings = {
       monitor = "${monitor_name},preferred,auto,auto";
-      xwayland = {
-        force_zero_scaling = true;
-      };
+      xwayland.force_zero_scaling = true;
       "$mod" = "SUPER";
       bind = [
         "$mod,Q,killactive" # Kill current process.
@@ -92,23 +90,17 @@ in {
           scale = 0.97;
         };
       };
-      input = {
-        numlock_by_default = true;
-      };
+      input.numlock_by_default = true;
       cursor = {
         inactive_timeout = 4;
         hide_on_key_press = true;
       };
-      windowrulev2 = [
-        "rounding 12, class:.* "
-      ];
+      windowrulev2 = ["rounding 12, class:.* "];
       ecosystem = {
         no_donation_nag = true;
         no_update_news = true;
       };
-      bezier = [
-        "macReal, 0.26, 0.06, 0.22, 1.00"
-      ];
+      bezier = ["macReal, 0.26, 0.06, 0.22, 1.00"];
       animation = [
         "border,1,8,default"
         "borderangle,0"
