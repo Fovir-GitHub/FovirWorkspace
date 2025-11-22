@@ -11,7 +11,7 @@
       popup_border_style = "rounded";
       filesystem = {
         follow_current_file = {
-          enabled = false;
+          enabled = true;
           leave_dirs_open = false;
         };
       };
