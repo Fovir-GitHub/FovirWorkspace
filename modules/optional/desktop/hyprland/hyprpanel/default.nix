@@ -27,5 +27,6 @@
     "animation slide left, .*dashboardmenu.*"
     "animation slide right, .*notificationsmenu.*"
     "animation slide right, .*calendarmenu.*"
+    "animation fade, .*verification.*"
   ];
 }
