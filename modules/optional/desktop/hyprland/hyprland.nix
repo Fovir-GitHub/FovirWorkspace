@@ -1,11 +1,4 @@
 {monitor-name}: {pkgs, ...}: {
-  home.packages = with pkgs; [
-    brightnessctl
-    pamixer
-    pavucontrol
-    pulseaudio
-  ];
-
   wayland.windowManager.hyprland = {
     enable = true;
 
