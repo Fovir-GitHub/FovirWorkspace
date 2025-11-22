@@ -56,9 +56,6 @@ in {
         ",XF86MonBrightnessUp,exec, brightnessctl set +5%"
         ",XF86MonBrightnessDown,exec,brightnessctl set 5%-"
       ];
-      exec-once = [
-        "random_wallpaper.sh"
-      ];
       general = {
         "col.active_border" = "rgba(5e9bf388)";
         "col.inactive_border" = "rgba(ffffff22)";
