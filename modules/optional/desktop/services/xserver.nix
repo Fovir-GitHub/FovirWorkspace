@@ -2,12 +2,7 @@
   services.xserver = {
     enable = true;
 
-    excludePackages = with pkgs; [
-      xterm
-    ];
-
-    videoDrivers = [
-      "amdgpu"
-    ];
+    excludePackages = [pkgs.xterm];
+    videoDrivers = ["amdgpu"];
   };
 }

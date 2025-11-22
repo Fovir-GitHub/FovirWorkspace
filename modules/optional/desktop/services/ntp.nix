@@ -1,5 +1,3 @@
 {...}: {
-  services.ntp = {
-    enable = true;
-  };
+  services.ntp.enable = true;
 }
