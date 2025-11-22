@@ -58,7 +58,6 @@ in {
       ];
       exec-once = [
         "random_wallpaper.sh"
-        "syncthing --no-browser"
       ];
       general = {
         "col.active_border" = "rgba(5e9bf388)";
