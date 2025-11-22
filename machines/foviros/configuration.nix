@@ -10,7 +10,6 @@
     })
     (import ./modules {username = username;})
     ../../modules/optional/boot-loader/systemd-boot.nix
-    ../../modules/optional/desktop-services
     ../../modules/optional/dns.nix
     ../../modules/optional/kernels/cachyos-desktop.nix
     ../../modules/optional/virtualisation/podman.nix
