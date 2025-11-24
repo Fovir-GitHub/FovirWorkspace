@@ -13,6 +13,12 @@
       options.desc = "Close Current Buffer";
     }
     {
+      action = "<cmd>bufdo bd<CR>";
+      key = "<leader>W";
+      mode = "n";
+      options.desc = "Close All Buffers";
+    }
+    {
       action = "<C-w>v";
       key = "<leader>v";
       mode = "n";
