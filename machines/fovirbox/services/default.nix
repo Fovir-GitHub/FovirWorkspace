@@ -4,6 +4,7 @@
     ./ensure-path.nix
     ./fusion.nix
     ./openlist.nix
+    ./polaris.nix
     ./postgres.nix
     ./radicale.nix
     ./redis.nix
