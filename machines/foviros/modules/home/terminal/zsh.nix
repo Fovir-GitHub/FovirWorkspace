@@ -25,6 +25,8 @@ in {
       gsc = "git switch --create";
       gsd = "git switch $(git_develop_branch)";
       gsm = "git switch $(git_main_branch)";
+      gfu = "git fetch upstream";
+      gfo = "git fetch origin";
 
       cp = "cp -v";
       mv = "mv --verbose";
