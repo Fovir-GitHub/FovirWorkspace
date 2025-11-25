@@ -1,5 +1,6 @@
 {
   imports = [
+    ./calibre.nix
     ./caddy.nix
     ./ensure-path.nix
     ./fusion.nix
