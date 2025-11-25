@@ -3,12 +3,8 @@
     image = "postgres:17";
     autoStart = true;
     environment = import ../values/postgres-environment.nix;
-    volumes = [
-      "${import ../values/podman-data-dir.nix}/postgres:/var/lib/postgresql/data:rw"
-    ];
-    ports = [
-      "127.0.0.1:5432:5432"
-    ];
+    volumes = ["${import ../values/podman-data-dir.nix}/postgres:/var/lib/postgresql/data:rw"];
+    ports = ["127.0.0.1:5432:5432"];
   };
 
   systemd.services.auto-create-user-db = {
