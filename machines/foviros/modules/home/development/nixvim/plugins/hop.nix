@@ -2,7 +2,11 @@
   plugins.hop = {
     enable = true;
 
-    settings.case_insensitive = true;
+    settings = {
+      case_insensitive = true;
+      create_hl_autocmd = true;
+      multi_windows = true;
+    };
   };
 
   keymaps = [
