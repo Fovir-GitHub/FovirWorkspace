@@ -35,7 +35,7 @@
         go = "go run %s",
         js = "node %s",
         ts = "npx tsx %s",
-        java = "java %s",
+        java = "javac -d out *.java && cd out/ && java %s ; cd ..",
         rs = "cargo run"
       }
 
@@ -50,6 +50,8 @@
         local cmd
         if cmd_template:match("%%s.-%%s") then
           cmd = string.format(cmd_template, filename_without_ext, filename_without_ext)
+        elseif ext == "java" then
+          cmd = string.format(cmd_template, filename_without_ext)
         else
           cmd = string.format(cmd_template, filename)
         end
