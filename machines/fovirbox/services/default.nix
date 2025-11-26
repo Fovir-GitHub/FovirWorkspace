@@ -1,6 +1,5 @@
 {
   imports = [
-    ./calibre.nix
     ./caddy.nix
     ./ensure-path.nix
     ./fusion.nix
@@ -12,6 +11,7 @@
     ./restic.nix
     ./rsshub.nix
     ./sci.nix
+    ./stump.nix
     ./syncthing.nix
     ./umami.nix
     ./wakapi.nix
