@@ -3,32 +3,29 @@
     enable = true;
 
     extensions = {
-      ui-select.enable = true;
-
       fzf-native.enable = true;
+      ui-select.enable = true;
     };
-
     settings.pickers.buffers = {
       ignore_current_buffer = false;
       initial_mode = "normal";
       select_current = true;
       sort_lastused = true;
     };
-
     keymaps = {
       "<leader>ff" = {
-        mode = "n";
         action = "find_files";
+        mode = "n";
         options.desc = "[F]ind [F]iles";
       };
       "<leader>st" = {
-        mode = "n";
         action = "live_grep";
+        mode = "n";
         options.desc = "[S]earch [T]ext";
       };
       "<leader><Tab>" = {
-        mode = "n";
         action = "buffers";
+        mode = "n";
         options.desc = "Select Buffer";
       };
     };
