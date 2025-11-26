@@ -8,6 +8,13 @@
       fzf-native.enable = true;
     };
 
+    settings.pickers.buffers = {
+      ignore_current_buffer = false;
+      initial_mode = "normal";
+      select_current = true;
+      sort_lastused = true;
+    };
+
     keymaps = {
       "<leader>ff" = {
         mode = "n";
@@ -18,6 +25,11 @@
         mode = "n";
         action = "live_grep";
         options.desc = "[S]earch [T]ext";
+      };
+      "<leader><Tab>" = {
+        mode = "n";
+        action = "buffers";
+        options.desc = "Select Buffer";
       };
     };
   };
