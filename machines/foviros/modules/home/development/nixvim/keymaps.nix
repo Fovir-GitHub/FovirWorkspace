@@ -179,17 +179,5 @@
         expr = true;
       };
     }
-    {
-      action = "<cmd>CybuLastusedNext<CR>";
-      key = "<C-Tab>";
-      mode = ["n" "i"];
-      options.desc = "Next Buffer";
-    }
-    {
-      action = "<cmd>CybuLastusedPrev<CR>";
-      key = "<C-S-Tab>";
-      mode = ["n" "i"];
-      options.desc = "Previous Buffer";
-    }
   ];
 }

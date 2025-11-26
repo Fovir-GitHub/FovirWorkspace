@@ -7,7 +7,6 @@
     ./colorizer.nix
     ./comment.nix
     ./conform-nvim.nix
-    ./cybu.nix
     ./dashboard.nix
     ./direnv.nix
     ./emmet.nix
