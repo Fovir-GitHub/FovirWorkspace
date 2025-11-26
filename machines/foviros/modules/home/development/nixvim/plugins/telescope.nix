@@ -10,7 +10,7 @@
       ignore_current_buffer = false;
       initial_mode = "normal";
       select_current = true;
-      sort_lastused = true;
+      sort_mru = true;
     };
     keymaps = {
       "<leader>ff" = {
