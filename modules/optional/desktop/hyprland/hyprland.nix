@@ -1,4 +1,4 @@
-{monitor-name}: {pkgs, ...}: {
+{monitor-name}: {...}: {
   wayland.windowManager.hyprland = {
     enable = true;
 
