@@ -84,6 +84,11 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/simple-tab-groups@drive4ik/latest.xpi";
           installation_mode = "force_installed";
         };
+        # Reading List
+        "leetcat@cs.ubc.ca" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/file/3644332/reading_list-2.4.10.xpi";
+          installation_mode = "force_installed";
+        };
       };
 
       Preferences = {
