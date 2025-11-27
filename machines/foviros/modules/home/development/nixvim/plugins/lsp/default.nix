@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     ./clangd.nix
+    ./cmake.nix
     ./cssls.nix
     ./gopls.nix
     ./html.nix
