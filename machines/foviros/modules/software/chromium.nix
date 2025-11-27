@@ -3,8 +3,9 @@
     enable = true;
 
     extensions = [
-      "dbepggeogbaibhgnhhndojpepiihcmeb" # Vimium
       "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock Origin
+      "dbepggeogbaibhgnhhndojpepiihcmeb" # Vimium
+      "emeeapjkbcbpbpgaagfchmcgglmebnen" # Surf Wallet
     ];
   };
 }
