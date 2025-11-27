@@ -28,6 +28,11 @@
         mode = "n";
         options.desc = "Select Buffer";
       };
+      "<leader>b" = {
+        action = "buffers";
+        mode = "n";
+        options.desc = "[B]uffers";
+      };
     };
   };
 }
