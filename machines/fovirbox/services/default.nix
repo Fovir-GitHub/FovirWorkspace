@@ -11,6 +11,7 @@
     ./restic.nix
     ./rsshub.nix
     ./sci.nix
+    ./searxng.nix
     ./stump.nix
     ./syncthing.nix
     ./umami.nix
