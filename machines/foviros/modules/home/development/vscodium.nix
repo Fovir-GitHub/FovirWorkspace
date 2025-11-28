@@ -10,6 +10,8 @@
         catppuccin.catppuccin-vsc-icons
         esbenp.prettier-vscode
         jock.svg
+        movebit.sui-move-analyzer
+        mysten.move
         vscodevim.vim
       ];
       enableUpdateCheck = false;
