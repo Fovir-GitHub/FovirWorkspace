@@ -10,6 +10,7 @@
     ./neovide.nix
     ./nixvim
     ./podman-compose.nix
+    ./sui.nix
     ./usbutils.nix
     ./vscodium.nix
     ./wakatime.nix
