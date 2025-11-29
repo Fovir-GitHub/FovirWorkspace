@@ -6,7 +6,7 @@
   programs.hyprpanel = {
     enable = true;
 
-    systemd.enable = true;
+    systemd.enable = false;
   };
 
   home = {
@@ -23,10 +23,13 @@
     ];
   };
 
-  wayland.windowManager.hyprland.settings.layerrule = [
-    "animation slide left, .*dashboardmenu.*"
-    "animation slide right, .*notificationsmenu.*"
-    "animation slide right, .*calendarmenu.*"
-    "animation fade, .*verification.*"
-  ];
+  wayland.windowManager.hyprland.settings = {
+    exec-once = ["hyprpanel &"];
+    layerrule = [
+      "animation slide left, .*dashboardmenu.*"
+      "animation slide right, .*notificationsmenu.*"
+      "animation slide right, .*calendarmenu.*"
+      "animation fade, .*verification.*"
+    ];
+  };
 }
