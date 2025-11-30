@@ -21,6 +21,7 @@
     ./luasnip.nix
     ./markdown.nix
     ./mini.nix
+    ./move-vim.nix
     ./neo-tree.nix
     ./neogen.nix
     ./noice.nix
