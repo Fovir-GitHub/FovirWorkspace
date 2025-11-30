@@ -41,9 +41,10 @@
   home.file.".clang-format".text = ''
     BasedOnStyle: LLVM
     AccessModifierOffset: -4
+    AlwaysBreakTemplateDeclarations: true
+    IndentCaseLabels: true
     IndentWidth: 4
     PointerAlignment: Middle
-    IndentCaseLabels: true
   '';
 
   home.file.".clangd".text = ''
