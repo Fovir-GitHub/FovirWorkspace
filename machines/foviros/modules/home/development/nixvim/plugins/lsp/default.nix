@@ -10,6 +10,7 @@
     ./just.nix
     ./lemminx.nix
     ./ltex.nix
+    ./move_analyzer.nix
     ./nil.nix
     ./pyright.nix
     ./rust_analyzer.nix
