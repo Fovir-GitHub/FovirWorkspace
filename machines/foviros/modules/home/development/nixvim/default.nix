@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     inputs.nixvim.homeModules.nixvim
   ];
@@ -10,6 +14,7 @@
     diagnostic.settings.virtual_text = true;
     editorconfig.enable = true;
     globals.mapleader = " "; # Set space as the leader key.
+    nixpkgs.pkgs = pkgs;
     imports = [
       ./autocmd.nix
       ./colorscheme.nix
