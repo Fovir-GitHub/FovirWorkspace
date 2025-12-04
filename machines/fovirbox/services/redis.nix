@@ -10,8 +10,8 @@
       "1"
       "--loglevel"
       "warning"
-      "--requirepass"
-      "${import ../values/redis-password.nix}"
+      # "--requirepass"
+      # "${import ../values/redis-password.nix}"
     ];
   };
 }
