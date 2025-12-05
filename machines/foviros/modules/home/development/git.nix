@@ -4,9 +4,10 @@
       enable = true;
 
       settings = {
-        user = import ../../../values/git-user.nix;
         init.defaultBranch = "main";
         pull.rebase = false;
+        push.autoSetupRemote = true;
+        user = import ../../../values/git-user.nix;
       };
     };
 
