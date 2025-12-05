@@ -35,6 +35,7 @@
     ./treesitter.nix
     ./ts-autotag.nix
     ./vim-matchup.nix
+    ./vimtex.nix
     ./wakatime.nix
     ./web-devicons.nix
     ./which-key.nix
