@@ -13,7 +13,7 @@
     file = {
       "${config.xdg.configHome}/hyprpanel/config.json" = {
         force = true;
-        source = ./config.json;
+        source = ../../../values/hyprpanel-config.json;
       };
       "${config.xdg.configHome}/hyprpanel/profile.png".source = avatar-path;
     };
