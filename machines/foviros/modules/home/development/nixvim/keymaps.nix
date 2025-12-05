@@ -179,5 +179,11 @@
         expr = true;
       };
     }
+    {
+      action = "noautocmd w";
+      mode = "c";
+      key = "W";
+      options.desc = "Save without Autocmd";
+    }
   ];
 }
