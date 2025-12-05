@@ -58,9 +58,13 @@
       };
 
       sources = [
+        {
+          name = "latex_symbols";
+          option.strategy = 2;
+        }
+        {name = "buffer";}
         {name = "nvim_lsp";}
         {name = "path";}
-        {name = "buffer";}
       ];
 
       snippet.expand = ''
@@ -122,4 +126,5 @@
       };
     };
   };
+  plugins.cmp-latex-symbols.enable = true;
 }
