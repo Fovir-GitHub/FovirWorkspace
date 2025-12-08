@@ -17,6 +17,7 @@
         "java" = ["google-java-format"];
         "nix" = ["alejandra"];
         "rust" = ["rustfmt"];
+        "tex" = ["latexindent"];
         "toml" = ["taplo"];
       };
     };
