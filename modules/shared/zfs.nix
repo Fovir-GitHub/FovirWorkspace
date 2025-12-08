@@ -27,5 +27,5 @@ with lib; {
     zfs-share.enable = mkForce false;
     zfs-zed.enable = mkForce false;
   };
-  services.zram-generator.enable = true;
+  zramSwap.enable = true;
 }
