@@ -3,9 +3,10 @@
     enable = true;
 
     filetypes = [
-      "markdown"
       "bibtex"
       "latex"
+      "markdown"
+      "tex"
     ];
     settings = {
       checkFrequency = "save";
@@ -13,6 +14,7 @@
         "bibtex"
         "latex"
         "markdown"
+        "tex"
       ];
     };
   };
