@@ -18,6 +18,13 @@
           {name = "luasnip";}
         ];
       };
+      java = {
+        sources = [
+          {name = "nvim_lsp";}
+          {name = "path";}
+          {name = "luasnip";}
+        ];
+      };
       rust = {
         sources = [
           {name = "nvim_lsp";}
@@ -51,11 +58,7 @@
     };
 
     settings = {
-      completion = {
-        autocomplete = [
-          "require('cmp.types').cmp.TriggerEvent.TextChanged"
-        ];
-      };
+      completion.autocomplete = ["require('cmp.types').cmp.TriggerEvent.TextChanged"];
 
       sources = [
         {name = "vimtex";}
