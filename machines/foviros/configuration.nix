@@ -20,6 +20,10 @@
     inputs.home-manager.nixosModules.home-manager
   ];
 
+  boot = {
+    kernelModules = ["amdgpu"];
+    kernelParams = ["amdgpu" "resume_offset=0"];
+  };
   networking = import ./values/networking.nix;
   programs.zsh.enable = true;
   security = import ./values/security.nix;
