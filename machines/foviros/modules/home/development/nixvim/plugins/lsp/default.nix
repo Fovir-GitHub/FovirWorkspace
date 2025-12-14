@@ -22,7 +22,5 @@
     ./yamlls.nix
   ];
 
-  plugins.lsp = {
-    enable = true;
-  };
+  plugins.lsp.enable = true;
 }
