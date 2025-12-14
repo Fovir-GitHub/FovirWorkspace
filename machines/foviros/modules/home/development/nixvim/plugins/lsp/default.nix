@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./asm_lsp.nix
     ./clangd.nix
     ./cmake.nix
     ./cssls.nix
