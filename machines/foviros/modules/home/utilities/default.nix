@@ -1,5 +1,6 @@
 {
   imports = [
+    ./anki.nix
     ./archiver.nix
     ./keepassxc.nix
     ./libreoffice.nix
