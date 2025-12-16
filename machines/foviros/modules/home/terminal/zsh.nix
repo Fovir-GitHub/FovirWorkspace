@@ -19,6 +19,7 @@ in {
       lt = "eza -aT --color=always --group-directories-first --icons=always"; # Tree listing.
 
       open = "xdg-open"; # Open.
+      j = "just";
 
       gpa = "git push --all";
       gs = "git switch";
