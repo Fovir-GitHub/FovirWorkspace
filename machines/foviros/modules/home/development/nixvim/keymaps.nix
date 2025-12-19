@@ -180,10 +180,10 @@
       };
     }
     {
-      action = "noautocmd w";
-      mode = "c";
-      key = "W";
-      options.desc = "Save without Autocmd";
+      action = "<cmd>noautocmd w<CR>";
+      mode = "n";
+      key = "<leader>swa";
+      options.desc = "[S]ave [W]ithout [A]utocmd";
     }
   ];
 }
