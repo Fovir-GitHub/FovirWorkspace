@@ -9,4 +9,5 @@
     spice-webdavd.enable = true;
   };
   virtualisation.libvirtd.enable = true;
+  networking.firewall.trustedInterfaces = ["virbr0"];
 }
