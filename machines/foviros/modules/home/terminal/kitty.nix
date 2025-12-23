@@ -10,6 +10,9 @@ in {
       size = 14;
     };
     keybindings = {
+      "ctrl+0" = "change_font_size all 0";
+      "ctrl+equal" = "change_font_size all +1.0";
+      "ctrl+minus" = "change_font_size all -1.0";
       "ctrl+shift+c" = "copy_to_clipboard";
       "ctrl+shift+v" = "paste_from_clipboard";
     };
