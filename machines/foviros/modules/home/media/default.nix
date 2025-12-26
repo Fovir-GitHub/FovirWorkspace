@@ -1,5 +1,6 @@
 {
   imports = [
+    ./ffmpeg.nix
     ./inkscape.nix
     ./mpv.nix
     ./mumble.nix
