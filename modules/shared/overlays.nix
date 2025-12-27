@@ -14,7 +14,7 @@
         };
       });
     })
-    (final: prev: {
+    (_final: prev: {
       sui = prev.callPackage ../../pkgs/sui {
         platform = prev.stdenv.hostPlatform;
       };
