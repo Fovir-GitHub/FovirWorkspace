@@ -9,6 +9,7 @@
     ./conform-nvim.nix
     ./dashboard.nix
     ./direnv.nix
+    ./dropbar.nix
     ./emmet.nix
     ./gitsigns.nix
     ./guess-indent.nix
@@ -32,6 +33,7 @@
     ./telescope.nix
     ./tmux-navigator.nix
     ./toggleterm.nix
+    ./treesitter-context.nix
     ./treesitter.nix
     ./ts-autotag.nix
     ./vim-matchup.nix
