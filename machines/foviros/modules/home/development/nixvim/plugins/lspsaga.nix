@@ -4,8 +4,9 @@
 
     settings = {
       code_action.keys.quit = "<esc>";
-      rename.keys.quit = "<esc>";
       lightbulb.enable = false;
+      rename.keys.quit = "<esc>";
+      symbol_in_winbar.enable = false;
     };
   };
 
