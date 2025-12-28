@@ -9,7 +9,6 @@
     ./conform-nvim.nix
     ./dashboard.nix
     ./direnv.nix
-    ./dropbar.nix
     ./emmet.nix
     ./gitsigns.nix
     ./guess-indent.nix
