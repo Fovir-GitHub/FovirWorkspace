@@ -12,7 +12,7 @@
 
   keymaps = [
     {
-      action = "<cmd>Lspsaga finder imp<CR>";
+      action = "<cmd>Lspsaga finder<CR>";
       key = "gi";
       mode = "n";
       options.desc = "[G]o to [I]mplement";
