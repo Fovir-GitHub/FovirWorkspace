@@ -79,12 +79,6 @@
       options.desc = "Open All Folds";
     }
     {
-      action = "<cmd>AerialToggle<CR>";
-      key = "<leader>a";
-      mode = "n";
-      options.desc = "Toggle Outline";
-    }
-    {
       action = "<cmd>!cd %:p:h && live-server --entry-file=%:t -q &<CR>";
       key = "<leader>lss";
       mode = "n";
@@ -101,12 +95,6 @@
       key = "<leader>D";
       mode = "n";
       options.desc = "[D]ashboard";
-    }
-    {
-      action = "<cmd>lua vim.diagnostic.goto_next()<CR>";
-      key = "<leader>d";
-      mode = "n";
-      options.desc = "Go to the Next [D]iagnostic";
     }
     {
       action = "<cmd>set spell<CR>";
