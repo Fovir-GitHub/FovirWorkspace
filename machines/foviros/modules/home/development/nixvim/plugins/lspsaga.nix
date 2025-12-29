@@ -15,6 +15,12 @@
       action = "<cmd>Lspsaga finder<CR>";
       key = "gi";
       mode = "n";
+      options.desc = "Show References";
+    }
+    {
+      action = "<cmd>Lspsaga finder imp<CR>";
+      key = "gI";
+      mode = "n";
       options.desc = "[G]o to [I]mplement";
     }
     {
