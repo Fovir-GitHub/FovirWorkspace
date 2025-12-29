@@ -10,6 +10,10 @@
       close_if_last_window = true;
       popup_border_style = "rounded";
       filesystem = {
+        filtered_items = {
+          hide_dotfiles = false;
+          hide_by_name = [".git"];
+        };
         follow_current_file = {
           enabled = true;
           leave_dirs_open = false;
