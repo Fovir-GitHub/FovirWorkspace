@@ -6,11 +6,34 @@
       fzf-native.enable = true;
       ui-select.enable = true;
     };
-    settings.pickers.buffers = {
-      ignore_current_buffer = false;
-      initial_mode = "normal";
-      select_current = true;
-      sort_mru = true;
+    settings = {
+      defaults.vimgrep_arguments = [
+        "rg"
+        "--color=never"
+        "--no-heading"
+        "--with-filename"
+        "--line-number"
+        "--column"
+        "--smart-case"
+        "--hidden"
+        "--glob"
+        "!**/.git/*"
+      ];
+      pickers = {
+        buffers = {
+          ignore_current_buffer = false;
+          initial_mode = "normal";
+          select_current = true;
+          sort_mru = true;
+        };
+        find_files.find_command = [
+          "rg"
+          "--files"
+          "--hidden"
+          "--glob"
+          "!**/.git/*"
+        ];
+      };
     };
     keymaps = {
       "<leader>ff" = {
