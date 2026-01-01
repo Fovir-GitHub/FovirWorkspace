@@ -93,7 +93,6 @@
         inactive_timeout = 4;
         hide_on_key_press = true;
       };
-      windowrulev2 = ["rounding 12, class:.* "];
       ecosystem = {
         no_donation_nag = true;
         no_update_news = true;
