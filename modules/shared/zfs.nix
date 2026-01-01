@@ -1,6 +1,7 @@
 {
   inputs,
   lib,
+  pkgs,
   ...
 }:
 with lib; {
@@ -9,7 +10,7 @@ with lib; {
     zfs = {
       forceImportRoot = false;
       devNodes = "/dev/disk/by-path";
-      package = inputs.chaotic.legacyPackages.x86_64-linux.zfs_cachyos;
+      package = inputs.nixpkgs-zen-6-17-9.legacyPackages.${pkgs.stdenv.hostPlatform.system}.zfs;
     };
   };
   services.zfs = {
