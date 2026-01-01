@@ -1,5 +1,5 @@
 {inputs, ...}: {
-  system.stateVersion = "25.05";
+  system.stateVersion = "26.05";
 
   imports = let
     username = "fovir";
@@ -11,7 +11,7 @@
     (import ./modules {username = username;})
     ../../modules/optional/boot-loader/systemd-boot.nix
     ../../modules/optional/dns.nix
-    ../../modules/optional/kernels/cachyos-desktop.nix
+    ../../modules/optional/kernels/zen.nix
     ../../modules/optional/virtualisation/podman.nix
     ../../modules/optional/virtualisation/qemu.nix
     ../../modules/shared
