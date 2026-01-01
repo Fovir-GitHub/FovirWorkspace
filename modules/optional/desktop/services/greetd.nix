@@ -3,7 +3,7 @@
     enable = true;
 
     settings.default_session = {
-      command = "${pkgs.tuigreet}/bin/tuigreet -t -c Hyprland --user-menu";
+      command = "${pkgs.tuigreet}/bin/tuigreet -t -c start-hyprland --user-menu";
       user = "greeter";
     };
   };
