@@ -42,6 +42,6 @@
       ",Print,exec,${screenshot-command}"
       "$mod,O,exec,${ocr-command}"
     ];
-    layerrule = ["animation fade, .*selection.*"];
+    layerrule = ["animation fade, match:namespace .*selection.*"];
   };
 }

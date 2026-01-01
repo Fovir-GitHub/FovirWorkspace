@@ -35,10 +35,10 @@
     bind = ["$mod, R, exec, restart-hyprpanel"];
     exec-once = ["hyprpanel &"];
     layerrule = [
-      "animation slide left, .*dashboardmenu.*"
-      "animation slide right, .*notificationsmenu.*"
-      "animation slide right, .*calendarmenu.*"
-      "animation fade, .*verification.*"
+      "animation slide left, match:namespace .*dashboardmenu.*"
+      "animation slide right, match:namespace .*notificationsmenu.*"
+      "animation slide right, match:namespace .*calendarmenu.*"
+      "animation fade, match:namespace .*verification.*"
     ];
   };
 }
