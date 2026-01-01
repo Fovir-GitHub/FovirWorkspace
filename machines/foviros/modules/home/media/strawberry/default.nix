@@ -4,7 +4,10 @@ in {
   home.packages = [pkgs.${strawberry}];
   wayland.windowManager.hyprland.settings = {
     exec-once = [strawberry];
-    windowrulev2 = ["workspace special, class:.*${strawberry}.*"];
+    windowrule = ["match:class .*${strawberry}.*, workspace special"];
+    bind = [
+      "$mod, C, movetoworkspace, special"
+    ];
   };
   xdg.configFile."strawberry/strawberry.conf".source = ./strawberry.conf;
 }

@@ -5,8 +5,8 @@ in {
 
   home-manager.users.${username}.wayland.windowManager.hyprland.settings = {
     exec-once = [sciName];
-    windowrulev2 = [
-      "workspace special, class:.*${sciName}.*"
+    windowrule = [
+      "workspace special, match:class .*${sciName}.*"
     ];
   };
 }

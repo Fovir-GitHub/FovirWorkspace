@@ -54,6 +54,6 @@
     keepassxc = "keepassxc";
   in {
     exec-once = [keepassxc];
-    windowrulev2 = ["workspace special, class:.*${keepassxc}.*"];
+    windowrule = ["workspace special, match:class .*${keepassxc}.*"];
   };
 }
