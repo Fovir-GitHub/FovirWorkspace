@@ -14,7 +14,7 @@
     users.fovir = {
       home = {
         homeDirectory = "/home/fovir";
-        stateVersion = "25.05";
+        stateVersion = "26.05";
         username = "fovir";
       };
       imports = [
