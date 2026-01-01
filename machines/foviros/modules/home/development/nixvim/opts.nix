@@ -41,4 +41,6 @@
     ## Max columns to highlight syntax.
     synmaxcol = 200;
   };
+
+  filetype.extension = {"tmpl" = "gotmpl";};
 }
