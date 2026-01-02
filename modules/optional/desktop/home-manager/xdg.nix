@@ -13,11 +13,7 @@
       portal = {
         enable = true;
 
-        config = {
-          common = {
-            default = "hyprland";
-          };
-        };
+        config.common.default = "hyprland";
         extraPortals = [
           pkgs.xdg-desktop-portal-gtk
           pkgs.xdg-desktop-portal-hyprland
