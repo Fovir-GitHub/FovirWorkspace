@@ -5,9 +5,6 @@ in {
   wayland.windowManager.hyprland.settings = {
     exec-once = [strawberry];
     windowrule = ["match:class .*${strawberry}.*, workspace special"];
-    bind = [
-      "$mod, C, movetoworkspace, special"
-    ];
   };
   xdg.configFile."strawberry/strawberry.conf".source = ./strawberry.conf;
 }
