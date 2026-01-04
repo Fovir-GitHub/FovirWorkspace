@@ -194,5 +194,11 @@
         silent = true;
       };
     }
+    {
+      action = ":sort<CR>";
+      key = "<leader>s";
+      mode = "v";
+      options.desc = "[S]ort";
+    }
   ];
 }
