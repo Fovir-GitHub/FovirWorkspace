@@ -168,12 +168,6 @@
       };
     }
     {
-      action = "<cmd>noautocmd w<CR>";
-      mode = "n";
-      key = "<leader>swa";
-      options.desc = "[S]ave [W]ithout [A]utocmd";
-    }
-    {
       action.__raw = ''
         function()
           local height = vim.api.nvim_win_get_height(0)

@@ -21,6 +21,7 @@
       ./keymaps.nix
       ./opts.nix
       ./plugins
+      ./usercommands.nix
     ];
   };
 }
