@@ -40,6 +40,7 @@
     linebreak = true;
     ## Max columns to highlight syntax.
     synmaxcol = 200;
+    scrolloff = 8;
   };
 
   filetype.extension = {"tmpl" = "gotmpl";};
