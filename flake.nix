@@ -5,10 +5,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
       url = "https://git.clan.lol/clan/clan-core/archive/main.tar.gz";
     };
-    disko.inputs.nixpkgs.follows = "nixpkgs";
-    disko.url = "github:nix-community/disko/latest";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    home-manager.url = "github:nix-community/home-manager";
+    disko = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/disko/latest";
+    };
+    home-manager = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/home-manager";
+    };
     hyprpanel = {
       url = "github:Jas-SinghFSU/HyprPanel";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -21,9 +25,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-zen-6-17-9.url = "github:nixos/nixpkgs/1bd06b272772102c6b587ce58d9420688fc8e332";
     nixpkgs-oculante.url = "github:nixos/nixpkgs/9df961d823a8d58a6a832a6d2f89778341920d9c";
-    nixvim = {
-      url = "github:Fovir-GitHub/nixvim";
-    };
+    nixvim.url = "github:Fovir-GitHub/nixvim";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
