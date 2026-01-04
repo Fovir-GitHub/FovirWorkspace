@@ -7,18 +7,21 @@
       ui-select.enable = true;
     };
     settings = {
-      defaults.vimgrep_arguments = [
-        "rg"
-        "--color=never"
-        "--no-heading"
-        "--with-filename"
-        "--line-number"
-        "--column"
-        "--smart-case"
-        "--hidden"
-        "--glob"
-        "!**/.git/*"
-      ];
+      defaults = {
+        path_display = ["smart"];
+        vimgrep_arguments = [
+          "rg"
+          "--color=never"
+          "--no-heading"
+          "--with-filename"
+          "--line-number"
+          "--column"
+          "--smart-case"
+          "--hidden"
+          "--glob"
+          "!**/.git/*"
+        ];
+      };
       pickers = {
         buffers = {
           ignore_current_buffer = false;
