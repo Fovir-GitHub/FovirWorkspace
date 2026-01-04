@@ -173,5 +173,26 @@
       key = "<leader>swa";
       options.desc = "[S]ave [W]ithout [A]utocmd";
     }
+    {
+      action.__raw = ''
+        function()
+          local height = vim.api.nvim_win_get_height(0)
+          local target = math.floor(height * 0.25)
+          local current = vim.fn.winline()
+          local scroll = current - target
+          if scroll > 0 then
+            vim.cmd('normal! ' .. scroll .. '\x05') -- Ctrl-E
+          elseif scroll < 0 then
+            vim.cmd('normal! ' .. math.abs(scroll) .. '\x19') -- Ctrl-Y
+          end
+        end
+      '';
+      mode = "n";
+      key = "zz";
+      options = {
+        desc = "Move current line to 25% of window";
+        silent = true;
+      };
+    }
   ];
 }
