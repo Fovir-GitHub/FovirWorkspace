@@ -9,6 +9,10 @@
     disko.url = "github:nix-community/disko/latest";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
+    hyprpanel = {
+      url = "github:Jas-SinghFSU/HyprPanel";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     hyprshell = {
       url = "github:H3rmt/hyprshell?ref=hyprshell-release";
       inputs.hyprland.follows = "nixpkgs";

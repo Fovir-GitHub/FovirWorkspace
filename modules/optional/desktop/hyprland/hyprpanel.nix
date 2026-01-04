@@ -1,10 +1,12 @@
 {avatar-path}: {
+  inputs,
   config,
   pkgs,
   ...
 }: {
   programs.hyprpanel = {
     enable = true;
+    package = inputs.hyprpanel.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
     systemd.enable = false;
   };
