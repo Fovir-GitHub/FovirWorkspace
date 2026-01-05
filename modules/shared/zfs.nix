@@ -1,5 +1,4 @@
 {
-  inputs,
   lib,
   pkgs,
   ...
@@ -10,7 +9,7 @@ with lib; {
     zfs = {
       forceImportRoot = false;
       devNodes = "/dev/disk/by-path";
-      package = inputs.nixpkgs-zen-6-17-9.legacyPackages.${pkgs.stdenv.hostPlatform.system}.zfs;
+      package = pkgs.zfs;
     };
   };
   services.zfs = {
