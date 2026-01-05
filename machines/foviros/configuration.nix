@@ -22,6 +22,7 @@
   boot = {
     kernelModules = ["amdgpu"];
     kernelParams = ["amdgpu" "resume_offset=0"];
+    resumeDevice = "/dev/nvme0n1";
   };
   disko.devices.disk.main.device = "/dev/disk/by-path/pci-0000:05:00.0-nvme-1";
   networking = import ./values/networking.nix;
