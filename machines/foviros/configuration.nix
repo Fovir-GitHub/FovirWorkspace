@@ -16,7 +16,6 @@
     ../../modules/optional/virtualisation/qemu.nix
     ../../modules/shared
     ./values/hardware-configuration.nix
-    inputs.chaotic.nixosModules.default
     inputs.home-manager.nixosModules.home-manager
   ];
 
