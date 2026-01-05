@@ -39,16 +39,6 @@
       };
     };
     keymaps = {
-      "<leader>ff" = {
-        action = "find_files";
-        mode = "n";
-        options.desc = "[F]ind [F]iles";
-      };
-      "<leader>st" = {
-        action = "live_grep";
-        mode = "n";
-        options.desc = "[S]earch [T]ext";
-      };
       "<leader><Tab>" = {
         action = "buffers";
         mode = "n";
@@ -58,6 +48,36 @@
         action = "buffers";
         mode = "n";
         options.desc = "[B]uffers";
+      };
+      "<leader>ff" = {
+        action = "find_files";
+        mode = "n";
+        options.desc = "[F]ind [F]iles";
+      };
+      "<leader>gbc" = {
+        action = "git_bcommits";
+        mode = "n";
+        options.desc = "[G]it [B]uffer [C]ommits";
+      };
+      "<leader>gbr" = {
+        action = "git_branches";
+        mode = "n";
+        options.desc = "[G]it [BR]anch";
+      };
+      "<leader>gc" = {
+        action = "git_commits";
+        mode = "n";
+        options.desc = "[G]it [C]ommits";
+      };
+      "<leader>gst" = {
+        action = "git_status";
+        mode = "n";
+        options.desc = "[G]it [ST]atus";
+      };
+      "<leader>st" = {
+        action = "live_grep";
+        mode = "n";
+        options.desc = "[S]earch [T]ext";
       };
     };
   };

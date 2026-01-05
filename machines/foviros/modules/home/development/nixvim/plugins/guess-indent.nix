@@ -8,9 +8,9 @@
   keymaps = [
     {
       action = "<cmd>GuessIndent<CR>";
-      key = "<leader>g";
+      key = "<leader>gi";
       mode = "n";
-      options.desc = "[G]uess Indent";
+      options.desc = "[G]uess [I]ndent";
     }
   ];
 }
