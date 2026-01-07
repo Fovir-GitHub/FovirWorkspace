@@ -35,7 +35,7 @@
         "$mod,bracketright,movetoworkspace,+1"
         "$mod,bracketleft,movetoworkspace,-1"
         # Make the window full screen.
-        "$mod,F,fullscreen,0"
+        "$mod,F,fullscreenstate,2 0"
         # Toggle float window.
         "$mod,SPACE,togglefloating"
       ];
