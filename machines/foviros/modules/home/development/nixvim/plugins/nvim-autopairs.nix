@@ -13,7 +13,15 @@
           :with_pair(function(opts)
             return opts.prev_char:match(".%*/") == nil
           end)
-          :use_key("*")
+          :use_key("*"),
+        Rule("**", "**", {"markdown"})
+          :with_pair(function(opts)
+            return opts.line:sub(opts.col - 1, opts.col) ~= "**"
+          end)
+          :with_move(function(opts)
+            return opts.prev_char:match(".%*")
+          end)
+          :use_key("*"),
       })
     '';
   };
