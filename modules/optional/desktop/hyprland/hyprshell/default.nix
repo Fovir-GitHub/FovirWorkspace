@@ -35,12 +35,15 @@
 
   wayland.windowManager.hyprland.settings.layerrule = ["match:namespace .*hyprshell.*, no_anim on"];
 
-  home.file.".local/bin/restart-hyprshell" = {
-    executable = true;
-    force = true;
-    text = ''
-      #!/usr/bin/env bash
-      pkill hyprshell && hyprshell run -q &
-    '';
+  home = {
+    file.".local/bin/restart-hyprshell" = {
+      executable = true;
+      force = true;
+      text = ''
+        #!/usr/bin/env bash
+        pkill hyprshell && hyprshell run -q &
+      '';
+    };
+    sessionVariables = {HYPRSHELL_NO_USE_PLUGIN = "1";};
   };
 }
