@@ -14,12 +14,12 @@
       url = "github:nix-community/home-manager";
     };
     hyprpanel = {
-      url = "github:Jas-SinghFSU/HyprPanel";
       inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:Jas-SinghFSU/HyprPanel";
     };
     hyprshell = {
-      url = "github:H3rmt/hyprshell?ref=hyprshell-release";
       inputs.hyprland.follows = "nixpkgs";
+      url = "github:H3rmt/hyprshell?ref=hyprshell-release";
     };
     nixpkgs-25-05.url = "github:nixos/nixpkgs/nixos-25.05";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
