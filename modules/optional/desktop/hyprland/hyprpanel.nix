@@ -34,7 +34,10 @@
   };
 
   wayland.windowManager.hyprland.settings = {
-    bind = ["$mod, R, exec, restart-hyprpanel"];
+    bind = [
+      "$mod, D, exec, hyprpanel dnd"
+      "$mod, R, exec, restart-hyprpanel"
+    ];
     exec-once = ["hyprpanel &"];
     layerrule = [
       "animation slide left, match:namespace .*dashboardmenu.*"
