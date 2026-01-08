@@ -30,8 +30,8 @@
     function RunCurrentFile()
       local runners = {
         py = "python -u %s",
-        c = "gcc -o %s *.c -g && ./%s",
-        cpp = "g++ -o %s *.cpp -g && ./%s",
+        c = "clang -o %s *.c -g && ./%s",
+        cpp = "clang++ -o %s *.cpp -g && ./%s",
         go = "go run %s",
         js = "node %s",
         ts = "npx tsx %s",
