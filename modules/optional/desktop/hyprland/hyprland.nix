@@ -88,7 +88,10 @@
           scale = 0.97;
         };
       };
-      input.numlock_by_default = true;
+      input = {
+        numlock_by_default = true;
+        touchpad.natural_scroll = true;
+      };
       cursor = {
         inactive_timeout = 4;
         hide_on_key_press = true;
