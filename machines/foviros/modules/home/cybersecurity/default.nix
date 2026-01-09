@@ -1,9 +1,13 @@
 {
-  imports = [
-    # ./dsniff.nix
-    ./ghidra.nix
-    ./nmap.nix
-    ./sqlmap.nix
-    ./zap.nix
+  inputs,
+  pkgs,
+  ...
+}: {
+  home.packages = with pkgs; [
+    ghidra
+    inputs.nixpkgs-25-05.legacyPackages.${pkgs.stdenv.hostPlatform.system}.dsniff
+    nmap
+    sqlmap
+    zap
   ];
 }
