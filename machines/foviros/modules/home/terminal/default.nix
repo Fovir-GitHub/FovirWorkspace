@@ -1,19 +1,35 @@
-{
+{pkgs, ...}: {
   imports = [
     ./bash.nix
-    ./bat.nix
-    ./btop.nix
-    ./dust.nix
-    ./eza.nix
     ./fastfetch
-    ./fd.nix
     ./kitty.nix
-    ./rename.nix
-    ./ripgrep.nix
-    ./rsync.nix
     ./starship.nix
-    ./tldr.nix
-    ./yazi.nix
     ./zsh.nix
   ];
+
+  home = {
+    packages = with pkgs; [
+      dust
+      rename
+      rsync
+      tldr
+    ];
+    shell.enableZshIntegration = true;
+  };
+
+  programs = {
+    bat.enable = true;
+    btop = {
+      enable = true;
+
+      settings = {
+        color_theme = "horizon";
+        vim_keys = true;
+      };
+    };
+    eza.enable = true;
+    fd.enable = true;
+    ripgrep.enable = true;
+    yazi.enable = true;
+  };
 }
