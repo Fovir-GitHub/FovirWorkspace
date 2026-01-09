@@ -11,9 +11,11 @@
     packages = with pkgs; [
       dust
       file
+      openssl
       rename
       rsync
       tldr
+      wl-clipboard-rs
     ];
     shell.enableZshIntegration = true;
   };
