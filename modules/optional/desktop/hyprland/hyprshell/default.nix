@@ -3,9 +3,7 @@
   pkgs,
   ...
 }: {
-  imports = [
-    inputs.hyprshell.homeModules.hyprshell
-  ];
+  imports = [inputs.hyprshell.homeModules.hyprshell];
 
   programs.hyprshell = {
     enable = true;
