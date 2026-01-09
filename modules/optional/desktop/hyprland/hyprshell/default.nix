@@ -31,7 +31,10 @@
     };
   };
 
-  wayland.windowManager.hyprland.settings.layerrule = ["match:namespace .*hyprshell.*, no_anim on"];
+  wayland.windowManager.hyprland.settings = {
+    bind = ["$mod SHIFT, R, exec, restart-hyprshell"];
+    layerrule = ["match:namespace .*hyprshell.*, no_anim on"];
+  };
 
   home = {
     file.".local/bin/restart-hyprshell" = {
@@ -39,7 +42,7 @@
       force = true;
       text = ''
         #!/usr/bin/env bash
-        pkill hyprshell && hyprshell run -q &
+        pkill hyprshell ; hyprshell run -q &
       '';
     };
     sessionVariables = {HYPRSHELL_NO_USE_PLUGIN = "1";};
