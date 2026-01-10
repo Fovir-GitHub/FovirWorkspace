@@ -19,6 +19,7 @@
 
         delay = 0;
         duration = 0;
+        style = "#00ffff";
         use_treesitter = true;
       };
       exclude_filetypes.dashboard = true;
