@@ -11,8 +11,8 @@
     ./emmet.nix
     ./gitsigns.nix
     ./guess-indent.nix
+    ./hlchunk.nix
     ./hop.nix
-    ./indent-blankline.nix
     ./leetcode.nix
     ./lsp
     ./lspsaga.nix
