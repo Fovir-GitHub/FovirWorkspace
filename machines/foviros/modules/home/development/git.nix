@@ -4,9 +4,11 @@
       enable = true;
 
       settings = {
+        commit.gpgsign = true;
         init.defaultBranch = "main";
         pull.rebase = false;
         push.autoSetupRemote = true;
+        tag.gpgSign = true;
         user = import ../../../values/git-user.nix;
       };
     };
