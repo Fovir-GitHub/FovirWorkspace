@@ -2,6 +2,7 @@
   imports = [
     ./anki.nix
     ./archiver.nix
+    ./gpg.nix
     ./keepassxc.nix
     ./libreoffice.nix
     ./localsend.nix
