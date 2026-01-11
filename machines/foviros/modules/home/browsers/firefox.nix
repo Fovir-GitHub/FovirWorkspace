@@ -94,6 +94,7 @@
 
       Preferences = {
         "browser.ctrlTab.sortByRecentlyUsed" = true;
+        "browser.ml.linkPreview.enabled" = false;
         "browser.startup.page" = 3;
         "browser.tabs.fadeOutExplicitlyUnloadedTabs" = true;
         "browser.tabs.unloadOnLowMemory" = true;
