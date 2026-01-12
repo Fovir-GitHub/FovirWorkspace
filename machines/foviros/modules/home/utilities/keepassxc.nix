@@ -25,7 +25,7 @@
 
         [Security]
         LockDatabaseIdle=true
-        LockDatabaseIdleSeconds=1200
+        LockDatabaseIdleSeconds=43200
 
         [SSHAgent]
         Enabled=true
