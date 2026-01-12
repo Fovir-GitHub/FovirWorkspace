@@ -21,7 +21,9 @@
         ${pkgs.podman}/bin/podman exec -i postgres \
         psql -U postgres \
         -c "CREATE ROLE wakapi WITH LOGIN PASSWORD '${import ../values/wakapi-db-pwd.nix}';" \
-        -c "CREATE DATABASE wakapi OWNER wakapi;"
+        -c "CREATE DATABASE wakapi OWNER wakapi;" \
+        -c "CREATE DATABASE gotosocial WITH locale 'C.UTF-8' template template0;" \
+        -c "CREATE USER gotosocial WITH PASSWORD '${import ../values/gotosocial-db-pwd.nix}';"
       '';
     };
   };

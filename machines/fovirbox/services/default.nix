@@ -12,6 +12,7 @@
     ./rsshub.nix
     ./sci.nix
     ./searxng.nix
+    ./social.nix
     ./stump.nix
     ./syncthing.nix
     ./umami.nix
