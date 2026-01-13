@@ -2,6 +2,6 @@
   networking.networkmanager = {
     enable = true;
 
-    dns = lib.mkForce "none";
+    dns = lib.mkForce "default";
   };
 }

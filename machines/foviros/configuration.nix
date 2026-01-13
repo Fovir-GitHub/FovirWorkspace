@@ -10,7 +10,6 @@
     })
     (import ./modules {username = username;})
     ../../modules/optional/boot-loader/systemd-boot.nix
-    ../../modules/optional/dns.nix
     ../../modules/optional/kernels/zen.nix
     ../../modules/optional/virtualisation/podman.nix
     ../../modules/optional/virtualisation/qemu.nix
