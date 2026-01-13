@@ -2,6 +2,7 @@
   polaris-path = "${import ../values/podman-data-dir.nix}/polaris";
 in {
   virtualisation.oci-containers.containers."polaris" = {
+    autoStart = true;
     image = "registry.gitlab.com/connectical/container/polaris";
     ports = ["127.0.0.1:5050:5050"];
     volumes = [

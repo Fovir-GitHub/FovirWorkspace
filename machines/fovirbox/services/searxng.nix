@@ -1,5 +1,6 @@
 {...}: {
   virtualisation.oci-containers.containers."searxng" = {
+    autoStart = true;
     image = "searxng/searxng:latest";
     ports = ["127.0.0.1:8888:8080"];
     volumes = let

@@ -1,6 +1,7 @@
 {...}: {
   virtualisation.oci-containers.containers = {
     "elk" = {
+      autoStart = true;
       image = "ghcr.io/fovir-github/elk:main";
       ports = ["127.0.0.1:1111:5314"];
       pull = "always";
@@ -12,6 +13,7 @@
     #   pull = "always";
     # };
     "gotosocial" = {
+      autoStart = true;
       environment = import ../values/gotosocial-env.nix;
       image = "docker.io/superseriousbusiness/gotosocial:latest";
       ports = ["127.0.0.1:1112:8080"];
