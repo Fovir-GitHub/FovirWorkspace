@@ -18,25 +18,17 @@
         source = ../../../values/hyprpanel-config.json;
       };
       "${config.xdg.configHome}/hyprpanel/profile.png".source = avatar-path;
-      ".local/bin/restart-hyprpanel" = {
-        executable = true;
-        force = true;
-        text = ''
-          #!/usr/bin/env bash
-          hyprpanel -q && hyprpanel &
-        '';
-      };
     };
     packages = with pkgs; [
-      libnotify
       cava
+      libnotify
     ];
   };
 
   wayland.windowManager.hyprland.settings = {
     bind = [
       "$mod, D, exec, hyprpanel dnd"
-      "$mod, R, exec, restart-hyprpanel"
+      "$mod, R, exec, hyprpanel r"
     ];
     exec-once = ["hyprpanel &"];
     layerrule = [
