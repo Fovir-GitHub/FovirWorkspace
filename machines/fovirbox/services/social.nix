@@ -17,6 +17,7 @@
       environment = import ../values/gotosocial-env.nix;
       image = "docker.io/superseriousbusiness/gotosocial:latest";
       ports = ["127.0.0.1:1112:8080"];
+      user = "root:root";
       volumes = ["${import ../values/podman-data-dir.nix}/gotosocial/data:/gotosocial/storage"];
     };
   };
