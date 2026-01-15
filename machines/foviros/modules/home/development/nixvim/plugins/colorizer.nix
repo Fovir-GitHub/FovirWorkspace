@@ -8,6 +8,7 @@
         "html"
         "javascript"
         "javascriptreact"
+        "scss"
       ];
 
       user_default_options = {
