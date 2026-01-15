@@ -87,7 +87,7 @@
         };
         # Reading List
         "leetcat@cs.ubc.ca" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/file/3644332/reading_list-2.4.10.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/leetcat@cs.ubc.ca/latest.xpi";
           installation_mode = "force_installed";
         };
       };
