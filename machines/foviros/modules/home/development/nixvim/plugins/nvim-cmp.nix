@@ -68,10 +68,10 @@
       completion.autocomplete = ["require('cmp.types').cmp.TriggerEvent.TextChanged"];
 
       sources = [
-        {name = "vimtex";}
-        {name = "buffer";}
         {name = "nvim_lsp";}
         {name = "path";}
+        {name = "buffer";}
+        {name = "vimtex";}
       ];
 
       snippet.expand = ''
