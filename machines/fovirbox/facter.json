@@ -281,11 +281,11 @@
           "/dev/disk/by-path/pci-0000:00:05.0-ata-1.0",
           "/dev/sr0"
         ],
-        "unix_device_name2": "/dev/sg0",
+        "unix_device_name2": "/dev/sg1",
         "unix_device_number2": {
           "type": 99,
           "major": 21,
-          "minor": 0,
+          "minor": 1,
           "range": 1
         },
         "driver": "ahci",
@@ -612,14 +612,14 @@
           "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_drive-scsi3-0-0-2",
           "/dev/disk/by-label/cidata",
           "/dev/disk/by-path/pci-0000:00:0b.0-scsi-0:0:0:2",
-          "/dev/disk/by-uuid/2026-01-22-08-57-03-00",
+          "/dev/disk/by-uuid/2026-01-22-09-46-20-00",
           "/dev/sda"
         ],
-        "unix_device_name2": "/dev/sg1",
+        "unix_device_name2": "/dev/sg0",
         "unix_device_number2": {
           "type": 99,
           "major": 21,
-          "minor": 1,
+          "minor": 0,
           "range": 1
         },
         "resources": [
@@ -921,7 +921,7 @@
           {
             "type": "mem",
             "base": 0,
-            "range": 4051034112,
+            "range": 4051066880,
             "enabled": true,
             "access": "read_write",
             "prefetch": "unknown"
@@ -1259,29 +1259,6 @@
     "network_interface": [
       {
         "index": 36,
-        "attached_to": 0,
-        "class_list": [
-          "network_interface"
-        ],
-        "base_class": {
-          "hex": "0107",
-          "name": "Network Interface",
-          "value": 263
-        },
-        "sub_class": {
-          "hex": "0000",
-          "name": "Loopback",
-          "value": 0
-        },
-        "model": "Loopback network interface",
-        "sysfs_id": "/class/net/lo",
-        "unix_device_name": "lo",
-        "unix_device_names": [
-          "lo"
-        ]
-      },
-      {
-        "index": 37,
         "attached_to": 25,
         "class_list": [
           "network_interface"
@@ -1320,6 +1297,29 @@
         ],
         "driver_modules": [
           "virtio_net"
+        ]
+      },
+      {
+        "index": 37,
+        "attached_to": 0,
+        "class_list": [
+          "network_interface"
+        ],
+        "base_class": {
+          "hex": "0107",
+          "name": "Network Interface",
+          "value": 263
+        },
+        "sub_class": {
+          "hex": "0000",
+          "name": "Loopback",
+          "value": 0
+        },
+        "model": "Loopback network interface",
+        "sysfs_id": "/class/net/lo",
+        "unix_device_name": "lo",
+        "unix_device_names": [
+          "lo"
         ]
       }
     ],
