@@ -7,6 +7,7 @@
       buffer_close_icon = "󰅖";
       close_icon = "";
       diagnostics = "nvim_lsp";
+      numbers = "ordinal";
       offsets = [
         {
           filetype = "neo-tree";
@@ -17,4 +18,18 @@
       ];
     };
   };
+
+  keymaps = (
+    builtins.genList (
+      i: let
+        n = i + 1;
+      in {
+        mode = "n";
+        key = "<M-${toString n}>";
+        action = "<cmd>BufferLineGoToBuffer ${toString n}<CR>";
+        options.desc = "Go to Buffer ${toString n}";
+      }
+    )
+    9
+  );
 }
