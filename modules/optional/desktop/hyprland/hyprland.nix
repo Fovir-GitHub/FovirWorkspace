@@ -8,7 +8,10 @@
       variables = ["--all"];
     };
     settings = {
-      monitor = "${monitor-name},preferred,auto,auto";
+      monitor = [
+        "${monitor-name},preferred,auto,auto"
+        ",preferred,auto,1"
+      ];
       xwayland.force_zero_scaling = true;
       "$mod" = "SUPER";
       bind = [
