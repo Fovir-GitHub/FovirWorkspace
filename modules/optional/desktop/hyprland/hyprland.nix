@@ -117,4 +117,21 @@
       ];
     };
   };
+
+  home.file.".local/bin/workspaces2monitor" = {
+    executable = true;
+    force = true;
+    text = ''
+      #!/usr/bin/env bash
+      if [ $# -ne 1 ]; then
+        echo "Usage: workspaces2monitor <monitor-name>"
+        echo ""
+        echo "Available monitors:"
+        hyprctl monitors all | grep '^Monitor'
+        exit 1
+      fi
+
+      for i in {1..20}; do hyprctl dispatch moveworkspacetomonitor $i $1; done
+    '';
+  };
 }
