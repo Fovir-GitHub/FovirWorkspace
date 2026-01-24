@@ -6,12 +6,16 @@
   services.hyprpaper = {
     enable = true;
 
-    settings = let
-      default_wallpaper = "${config.xdg.userDirs.pictures}/Wallpaper/0.png";
-    in {
+    settings = {
       ipc = "on";
-      preload = [default_wallpaper];
-      wallpaper = ",${default_wallpaper}";
+      splash = false;
+      wallpaper = [
+        {
+          monitor = "";
+          path = "${config.xdg.userDirs.pictures}/Wallpaper";
+          timeout = 60 * 15;
+        }
+      ];
     };
   };
 
@@ -21,10 +25,10 @@
       force = true;
       recursive = true;
       source = pkgs.fetchFromGitHub {
-        hash = "sha256-YoFBK6e/CY9VkCJd+ACoMSGoUTo+8MguyEIcCEN1Edk=";
+        hash = "sha256-O4XXtgwhw7HRbJ3TmkpLC0ydp0HznEBD4lWvWzXTC7w=";
         owner = "Fovir-GitHub";
         repo = "wallpaper";
-        rev = "28031d92a2da6f3b1c0f4409a47eca4cae2b2516";
+        rev = "0390bc8ff6f17177c9ef68d34eb2b2698d74cca9";
       };
     };
   };
