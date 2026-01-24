@@ -2,9 +2,11 @@
   services.resolved = {
     enable = true;
 
-    dnsovertls = "opportunistic";
-    domains = ["~."];
-    fallbackDns = import ../values/nameserver.nix;
+    settings.Resolve = {
+      DnsOverTLS = "opportunistic";
+      Domains = ["~."];
+      FallbackDns = import ../values/nameserver.nix;
+    };
   };
 
   networking = {
