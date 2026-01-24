@@ -6,7 +6,7 @@
       blank = {
         enable = true;
 
-        chars = ["  "];
+        chars = [" "];
         style = [
           {bg = "#434437";}
           {bg = "#2f4440";}
