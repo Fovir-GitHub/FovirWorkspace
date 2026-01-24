@@ -17,7 +17,7 @@
             src = pkgs.fetchFromGitHub {
               owner = "shellRaining";
               repo = "hlchunk.nvim";
-              rev = "d5e45809ed93991ade8e10e4f706cd7699b17430";
+              rev = "3bc2bd7aef28fbed6643534a0fdd0f19966544bc";
               sha256 = "sha256-NcfH9AnURII+MTSoyDgnotpzjcLNxXx1BXnKYXP2C/0=";
             };
           });
