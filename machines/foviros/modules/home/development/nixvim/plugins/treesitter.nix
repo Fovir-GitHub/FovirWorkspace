@@ -3,13 +3,10 @@
   plugins.treesitter = {
     enable = true;
 
-    folding = true;
+    folding.enable = true;
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.passthru.allGrammars;
-    settings = {
-      auto_install = true;
-      indent.enable = true;
-      highlight.enable = true;
-    };
+    highlight.enable = true;
+    indent.enable = true;
   };
 
   extraConfigLua = ''
