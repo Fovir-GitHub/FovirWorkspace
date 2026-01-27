@@ -28,6 +28,7 @@
     ./nvim-cmp.nix
     ./nvim-surround.nix
     ./persistence.nix
+    ./rainbow-delimiters.nix
     ./telescope.nix
     ./tmux-navigator.nix
     ./toggleterm.nix
