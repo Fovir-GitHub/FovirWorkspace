@@ -24,7 +24,10 @@
     notify = {
       enable = true;
 
-      settings.timeout = 1;
+      settings = {
+        timeout = 1;
+        top_down = false;
+      };
     };
   };
 }
