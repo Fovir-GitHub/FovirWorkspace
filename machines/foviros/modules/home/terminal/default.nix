@@ -12,6 +12,7 @@
       dust
       file
       openssl
+      rclone
       rename
       rsync
       tldr
