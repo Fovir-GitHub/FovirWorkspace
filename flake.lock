@@ -503,22 +503,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-zen-6-17-9": {
-      "locked": {
-        "lastModified": 1764182623,
-        "narHash": "sha256-hVUDScpae3wTHf8NK0aL5u3sldjiZWDz+nXeBcke8h0=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "1bd06b272772102c6b587ce58d9420688fc8e332",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "1bd06b272772102c6b587ce58d9420688fc8e332",
-        "type": "github"
-      }
-    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1767379071,
@@ -615,7 +599,6 @@
         "nixpkgs": "nixpkgs_4",
         "nixpkgs-25-05": "nixpkgs-25-05",
         "nixpkgs-oculante": "nixpkgs-oculante",
-        "nixpkgs-zen-6-17-9": "nixpkgs-zen-6-17-9",
         "nixvim": "nixvim"
       }
     },

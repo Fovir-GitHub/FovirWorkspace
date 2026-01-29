@@ -9,7 +9,7 @@ with lib; {
     zfs = {
       forceImportRoot = false;
       devNodes = "/dev/disk/by-path";
-      package = pkgs.zfs;
+      package = pkgs.zfs_unstable;
     };
   };
   services.zfs = {
