@@ -60,8 +60,8 @@
         "col.active_border" = "rgba(5e9bf388)";
         "col.inactive_border" = "rgba(ffffff22)";
         border_size = 3;
-        gaps_in = 8;
-        gaps_out = 14;
+        gaps_in = 2;
+        gaps_out = 4;
       };
       decoration = {
         active_opacity = 1.0;
