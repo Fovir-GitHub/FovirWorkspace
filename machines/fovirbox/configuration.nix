@@ -15,5 +15,6 @@ in {
     ../../modules/shared
     ./modules
     ./services
+    ./values/encrypt.nix
   ];
 }

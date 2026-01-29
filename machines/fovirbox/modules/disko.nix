@@ -39,25 +39,19 @@
           "root" = {
             mountpoint = "/";
             options = {
-              mountpoint = "legacy";
+              encryption = "aes-256-gcm";
+              keyformat = "passphrase";
+              keylocation = "prompt";
               "com.sun:auto-snapshot" = "false";
             };
             type = "zfs_fs";
           };
-          "root/nix" = {
-            mountpoint = "/nix";
-            options."com.sun:auto-snapshot" = "false";
-            type = "zfs_fs";
-          };
         };
-        options = {
-          ashift = "12";
-          compatibility = "grub2";
-        };
+        options.ashift = "12";
         rootFsOptions = {
           acltype = "posixacl";
           atime = "off";
-          compression = "lz4";
+          compression = "zstd";
           mountpoint = "none";
           xattr = "sa";
         };
