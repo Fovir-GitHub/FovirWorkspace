@@ -4,6 +4,8 @@
     ./caddy.nix
     ./ensure-path.nix
     ./fusion.nix
+    ./gotify-fail2ban.nix
+    ./gotify.nix
     ./openlist.nix
     ./polaris.nix
     ./postgres.nix
