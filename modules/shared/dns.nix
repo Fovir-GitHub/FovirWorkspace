@@ -11,7 +11,6 @@
 
   networking = {
     dhcpcd.extraConfig = "nohook resolv.conf";
-    firewall.enable = false;
     resolvconf.enable = lib.mkForce false;
   };
 }

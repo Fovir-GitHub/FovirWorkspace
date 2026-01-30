@@ -1,7 +1,6 @@
 {lib, ...}: {
   networking = {
     useDHCP = lib.mkDefault false;
-    firewall.enable = lib.mkDefault false;
     interfaces.eth0 = {
       ipv4 = {
         addresses = [

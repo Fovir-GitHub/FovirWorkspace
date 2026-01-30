@@ -1,5 +1,6 @@
 {
   imports = [
+    ../values/sci.nix
     ./caddy.nix
     ./ensure-path.nix
     ./fusion.nix
@@ -10,7 +11,6 @@
     ./redis.nix
     ./restic.nix
     ./rsshub.nix
-    ./sci.nix
     ./searxng.nix
     ./social.nix
     ./stump.nix
