@@ -1,7 +1,23 @@
 {...}: {
+  extraConfigLua = ''
+    vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", {
+      fg = "#a6adc8",
+      italic = true,
+    })
+  '';
+
   plugins.gitsigns = {
     enable = true;
 
-    settings.update_debounce = 100;
+    settings = {
+      current_line_blame = true;
+      current_line_blame_opts = {
+        delay = 500;
+        ignore_whitespace = true;
+        virt_text = true;
+        virt_text_pos = "eol";
+      };
+      update_debounce = 100;
+    };
   };
 }
