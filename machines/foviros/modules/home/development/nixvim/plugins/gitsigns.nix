@@ -20,4 +20,13 @@
       update_debounce = 100;
     };
   };
+
+  keymaps = [
+    {
+      action = "<cmd>Gitsigns diffthis<CR>";
+      key = "<leader>dt";
+      mode = "n";
+      options.desc = "[D]iff [T]his";
+    }
+  ];
 }
