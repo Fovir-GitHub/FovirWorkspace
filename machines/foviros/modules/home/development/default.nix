@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     ./dconf.nix
+    ./delta.nix
     ./dosbox.nix
     ./formatters.nix
     ./git.nix
