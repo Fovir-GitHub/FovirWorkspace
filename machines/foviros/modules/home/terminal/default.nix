@@ -22,7 +22,11 @@
   };
 
   programs = {
-    bat.enable = true;
+    bat = {
+      enable = true;
+
+      config.theme = "Catppuccin Mocha";
+    };
     btop = {
       enable = true;
 
