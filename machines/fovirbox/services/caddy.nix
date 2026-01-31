@@ -13,6 +13,14 @@
   services.caddy = {
     enable = true;
 
+    logDir = "/var/log/caddy";
+    logFormat = ''
+      output file /var/log/caddy/caddy.log {
+        roll_size 10MiB
+        roll_keep 10
+      }
+      format json
+    '';
     globalConfig = ''
       auto_https disable_certs
       servers {
