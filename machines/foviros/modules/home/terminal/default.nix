@@ -1,4 +1,6 @@
-{pkgs, ...}: {
+{pkgs, ...}: let
+  batTheme = "Catppuccin Mocha";
+in {
   imports = [
     ./bash.nix
     ./fastfetch
@@ -18,6 +20,7 @@
       tldr
       wl-clipboard-rs
     ];
+    sessionVariables.BAT_THEME = batTheme;
     shell.enableZshIntegration = true;
   };
 
@@ -25,7 +28,7 @@
     bat = {
       enable = true;
 
-      config.theme = "Catppuccin Mocha";
+      config.theme = batTheme;
     };
     btop = {
       enable = true;
