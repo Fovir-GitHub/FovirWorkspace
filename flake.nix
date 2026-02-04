@@ -23,7 +23,6 @@
     };
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nixpkgs-25-05.url = "github:nixos/nixpkgs/nixos-25.05";
-    nixpkgs-oculante.url = "github:nixos/nixpkgs/9df961d823a8d58a6a832a6d2f89778341920d9c";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
   };

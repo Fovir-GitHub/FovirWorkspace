@@ -487,22 +487,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-oculante": {
-      "locked": {
-        "lastModified": 1760101468,
-        "narHash": "sha256-pX0tN89DC96mWuIwMOijhParjZ5qq0GgsOjD/SJUeGU=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "9df961d823a8d58a6a832a6d2f89778341920d9c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "9df961d823a8d58a6a832a6d2f89778341920d9c",
-        "type": "github"
-      }
-    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1767379071,
@@ -598,7 +582,6 @@
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixpkgs": "nixpkgs_4",
         "nixpkgs-25-05": "nixpkgs-25-05",
-        "nixpkgs-oculante": "nixpkgs-oculante",
         "nixvim": "nixvim"
       }
     },
