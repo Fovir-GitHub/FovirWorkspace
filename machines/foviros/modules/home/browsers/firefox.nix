@@ -85,9 +85,9 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/simple-tab-groups@drive4ik/latest.xpi";
           installation_mode = "force_installed";
         };
-        # Reading List
-        "leetcat@cs.ubc.ca" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/leetcat@cs.ubc.ca/latest.xpi";
+        # Karakeep
+        "addon@karakeep.app" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/addon@karakeep.app/latest.xpi";
           installation_mode = "force_installed";
         };
       };
