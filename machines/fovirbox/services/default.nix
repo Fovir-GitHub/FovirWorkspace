@@ -6,6 +6,7 @@
     ./fusion.nix
     ./gotify-fail2ban.nix
     ./gotify.nix
+    ./karakeep.nix
     ./openlist.nix
     ./polaris.nix
     ./postgres.nix
