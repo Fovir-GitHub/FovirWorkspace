@@ -7,6 +7,7 @@
     ./keepassxc.nix
     ./libreoffice.nix
     ./localsend.nix
+    ./lutris.nix
     ./nemo.nix
     ./qalculate.nix
     ./screenshot.nix
