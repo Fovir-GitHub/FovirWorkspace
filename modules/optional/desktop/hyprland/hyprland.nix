@@ -1,4 +1,4 @@
-{monitor-name}: {...}: {
+{monitor-config}: {...}: {
   wayland.windowManager.hyprland = {
     enable = true;
 
@@ -8,10 +8,9 @@
       variables = ["--all"];
     };
     settings = {
-      monitor = [
-        "${monitor-name},preferred,auto,auto"
-        ",preferred,auto,1"
-      ];
+      monitor =
+        [",preferred,auto,1"]
+        ++ monitor-config;
       xwayland.force_zero_scaling = true;
       "$mod" = "SUPER";
       bind = [

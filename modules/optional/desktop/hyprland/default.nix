@@ -1,7 +1,7 @@
 {
   username,
   avatar-path,
-  monitor-name ? "eDP-1",
+  monitor-config ? [],
 }: {
   programs.hyprland = {
     enable = true;
@@ -21,7 +21,7 @@
 
   home-manager.users.${username} = {pkgs, ...}: {
     imports = [
-      (import ./hyprland.nix {inherit monitor-name;})
+      (import ./hyprland.nix {inherit monitor-config;})
       (import ./hyprpanel.nix {inherit avatar-path;})
       ./hyprlock.nix
       ./hyprpaper.nix
