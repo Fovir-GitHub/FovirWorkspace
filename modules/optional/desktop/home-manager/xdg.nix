@@ -33,6 +33,7 @@
         publicShare = "/var/empty";
         extraConfig = {
           XDG_PROJECTS_DIR = "$HOME/Projects";
+          XDG_GAMES_DIR = "$HOME/Games";
           XDG_SCREENSHOTS_DIR = "${config.xdg.userDirs.pictures}/Screenshots";
         };
       };
