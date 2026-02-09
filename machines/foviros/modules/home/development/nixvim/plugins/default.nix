@@ -27,6 +27,7 @@
     ./nvim-autopairs.nix
     ./nvim-cmp.nix
     ./nvim-surround.nix
+    ./opencode.nix
     ./persistence.nix
     ./rainbow-delimiters.nix
     ./telescope.nix
