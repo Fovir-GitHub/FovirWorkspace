@@ -5,6 +5,12 @@
     settings.options = {
       always_show_bufferline = true;
       buffer_close_icon = "󰅖";
+      custom_filter = ''
+        function(bufnr)
+          local name = vim.api.nvim_buf_get_name(bufnr)
+          return not name:match("^term://")
+        end
+      '';
       close_icon = "";
       diagnostics = "nvim_lsp";
       numbers = "ordinal";
