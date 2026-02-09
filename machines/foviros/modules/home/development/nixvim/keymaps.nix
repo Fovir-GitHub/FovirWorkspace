@@ -194,5 +194,11 @@
       mode = "v";
       options.desc = "[S]ort";
     }
+    {
+      action = "<C-\\><C-n>";
+      mode = "t";
+      key = "<M-Esc>";
+      options.desc = "Terminal -> Normal";
+    }
   ];
 }
