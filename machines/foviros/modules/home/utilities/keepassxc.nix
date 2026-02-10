@@ -4,6 +4,7 @@
   ...
 }: {
   programs.keepassxc.enable = true;
+  services.ssh-agent.enable = true;
 
   home.file = {
     "${config.xdg.configHome}/keepassxc/keepassxc.ini" = {
@@ -29,7 +30,7 @@
 
         [SSHAgent]
         Enabled=true
-        UseOpenSSH=true
+        UseOpenSSH=false
       '';
     };
 
