@@ -61,3 +61,8 @@ switch host:
   git add --all
   sudo nixos-rebuild switch --flake .#{{host}} --show-trace
   git restore --staged .
+
+gc:
+  # Do garbage-clean (remove unused packages, etc).
+  sudo nix profile wipe-history --older-than 7d --profile /nix/var/nix/profiles/system
+  sudo nix-collect-garbage --delete-old
