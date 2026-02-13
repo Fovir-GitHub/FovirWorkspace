@@ -5,6 +5,7 @@
     ./dns.nix
     ./nix.nix
     ./overlays.nix
+    ./security.nix
     ./ssh.nix
     ./zfs.nix
   ];

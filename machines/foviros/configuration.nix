@@ -30,5 +30,4 @@
   disko.devices.disk.main.device = "/dev/disk/by-path/pci-0000:05:00.0-nvme-1";
   networking = import ./values/networking.nix;
   programs.zsh.enable = true;
-  security = import ./values/security.nix;
 }
