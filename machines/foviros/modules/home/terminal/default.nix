@@ -40,6 +40,7 @@ in {
     };
     eza.enable = true;
     fd.enable = true;
+    htop.enable = true;
     ripgrep.enable = true;
     yazi.enable = true;
   };
