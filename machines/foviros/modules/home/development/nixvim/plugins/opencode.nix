@@ -1,6 +1,4 @@
-{pkgs, ...}: {
-  extraPackages = [pkgs.lsof];
-
+{...}: {
   plugins.opencode.enable = true;
 
   keymaps = [
