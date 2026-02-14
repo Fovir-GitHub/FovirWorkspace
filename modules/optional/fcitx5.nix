@@ -23,11 +23,9 @@
     xdg = {
       configFile."fcitx5/conf/rime.conf".text = ''
         # Preedit Mode
-        PreeditMode="Do not show"
-        # Shared Input State
-        # InputState=All
+        PreeditMode="Inline"
         # Fix embedded preedit cursor at the beginning of the preedit
-        # PreeditCursorPositionAtBeginning=True
+        PreeditCursorPositionAtBeginning=False
         # Action when switching input method
         # SwitchInputMethodBehavior="Commit commit preview"
         # Deploy
@@ -38,14 +36,12 @@
       dataFile."fcitx5/rime" = {
         force = true;
         recursive = true;
-        source =
-          pkgs.fetchFromGitHub {
-            hash = "sha256-/5OJPess4VkHhJ6UIoBH+Llj0OAWNdjHki7t8smzk3c
-=";
-            owner = "Fovir-GitHub";
-            repo = "rime";
-            rev = "16b232b88e181ab74b4e881e466797ab25222e66";
-          };
+        source = pkgs.fetchFromGitHub {
+          hash = "sha256-Y6/tU63+JQ9HX1m/kI9VQz6tIhFVRAPSsp6Vf47gzUk=";
+          owner = "iDvel";
+          repo = "rime-ice";
+          rev = "23f0c39a0b443524e37dbff4f085236b32691291";
+        };
       };
     };
   };
