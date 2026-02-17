@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./android.nix
     ./dconf.nix
     ./delta.nix
     ./dosbox.nix
