@@ -25,10 +25,10 @@
       force = true;
       recursive = true;
       source = pkgs.fetchFromGitHub {
-        hash = "sha256-O4XXtgwhw7HRbJ3TmkpLC0ydp0HznEBD4lWvWzXTC7w=";
+        hash = "sha256-PLeL6pLg3+V/hUsKGLdgalzcHmdkUxA1YCY3icBoHKs=";
         owner = "Fovir-GitHub";
         repo = "wallpaper";
-        rev = "0390bc8ff6f17177c9ef68d34eb2b2698d74cca9";
+        rev = "30cf8276bd9b2873cd3f8c808d6dafdbf5583def";
       };
     };
   };
