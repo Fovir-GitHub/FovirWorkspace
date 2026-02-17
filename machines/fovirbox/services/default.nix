@@ -18,6 +18,7 @@
     ./social.nix
     ./stump.nix
     ./syncthing.nix
+    ./tuwunel.nix
     ./umami.nix
     ./wakapi.nix
   ];
