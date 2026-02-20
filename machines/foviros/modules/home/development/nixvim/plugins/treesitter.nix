@@ -8,12 +8,4 @@
     highlight.enable = true;
     indent.enable = true;
   };
-
-  extraConfigLua = ''
-    vim.o.foldmethod = "expr"
-    vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-    vim.o.foldenable = true
-    vim.o.foldlevel = 99
-    vim.o.foldlevelstart = 99
-  '';
 }

@@ -9,8 +9,14 @@
     vim.g.neovide_opacity = 0.9
     vim.g.neovide_normal_opacity = 0.9
     vim.o.shell="${pkgs.zsh}/bin/zsh"
-
     vim.g.user_emmet_expandabbr_key = "<M-,>";
+
+    function _G.MyFoldText()
+      local startLine = vim.fn.getline(vim.v.foldstart)
+      local endLine = vim.v.foldend
+      local nLines = endLine - vim.v.foldstart + 1
+      return string.format("%s +%d lines", startLine:gsub("%s*$", ""), nLines)
+    end
   '';
 
   opts = {
@@ -38,8 +44,15 @@
     # Enable line wrap.
     wrap = true;
     linebreak = true;
-    ## Max columns to highlight syntax.
+    # Max columns to highlight syntax.
     synmaxcol = 200;
+    # Fold settings.
+    foldenable = true;
+    foldexpr = "v:lua.vim.treesitter.foldexpr()";
+    foldlevel = 99;
+    foldlevelstart = 99;
+    foldmethod = "expr";
+    foldtext = "v:lua.MyFoldText()";
   };
 
   filetype.extension = {"tmpl" = "gotmpl";};
