@@ -39,7 +39,12 @@ in {
     };
 
     initContent = ''
-      eval "$(starship init zsh)"
+      autoload -U promptinit; promptinit
+      PURE_GIT_STASH_SYMBOL='$'
+      zstyle :prompt:pure:environment:nix-shell show no
+      zstyle :prompt:pure:git:dirty detailed yes
+      zstyle :prompt:pure:git:stash show yes
+      prompt pure
 
       set -o vi
       bindkey -M viins '^H' backward-kill-word
