@@ -19,6 +19,7 @@ in {
       rename
       rsync
       tldr
+      tokei
       wl-clipboard-rs
     ];
     sessionVariables.BAT_THEME = batTheme;
