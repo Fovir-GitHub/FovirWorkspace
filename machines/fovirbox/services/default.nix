@@ -12,6 +12,7 @@
     ./fusion.nix
     ./gotify-fail2ban.nix
     ./gotify.nix
+    ./liwan.nix
     ./mytrix.nix
     ./openlist.nix
     ./polaris.nix
@@ -22,7 +23,6 @@
     ./searxng.nix
     ./syncthing.nix
     ./tuwunel.nix
-    ./umami.nix
     ./valkey.nix
     ./wakapi.nix
     ./zeroclaw.nix
