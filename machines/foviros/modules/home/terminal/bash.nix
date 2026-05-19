@@ -11,7 +11,6 @@
     enableCompletion = true;
     initExtra = ''
       set -o vi
-      eval "$(starship init bash)"
     '';
     shellAliases = {
       ls = "eza -alF --color=always --group --group-directories-first --icons=always"; # Preferred listing.
