@@ -5,9 +5,13 @@
 
       settings = {
         commit.gpgsign = true;
+        diff.algorithm = "histogram";
+        format.signoff = true;
         init.defaultBranch = "main";
-        pull.rebase = false;
+        pull.rebase = true;
         push.autoSetupRemote = true;
+        rebase.autoStash = true;
+        rerere.enabled = true;
         tag.gpgSign = true;
         user = import ../../../values/git-user.nix;
       };
