@@ -14,6 +14,7 @@ in {
     syntaxHighlighting.enable = true;
     shellAliases = {
       cp = "cp -v";
+      gc = "git commit --verbose -s";
       gfo = "git fetch origin";
       gfu = "git fetch upstream";
       gpa = "git push --all";
