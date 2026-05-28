@@ -1,6 +1,7 @@
 {
   imports = [
     # ../values/meet.nix
+    # ./zeroclaw.nix
     ../values/sci.nix
     ./authelia.nix
     ./bird-lg.nix
@@ -23,6 +24,5 @@
     ./tuwunel.nix
     ./valkey.nix
     ./wakapi.nix
-    ./zeroclaw.nix
   ];
 }
