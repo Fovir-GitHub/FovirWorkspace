@@ -41,7 +41,13 @@ install host target:
 update host:
   # Update machine configuration.
   git add --all
-  clan machines update {{host}} --build-host localhost
+  clan machines update {{host}} --debug # --build-host localhost
+  git restore --staged .
+
+update-local host:
+  # Update machine configuration locally.
+  git add --all
+  clan machines update {{host}} --debug --build-host localhost
   git restore --staged .
 
 format:
