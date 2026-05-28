@@ -3,7 +3,6 @@
 in {
   boot.kernelParams = ["zfs.zfs_arc_max=1073741824"];
   boot.loader.limine.biosDevice = lib.mkForce disk;
-  clan.core.networking.buildHost = "localhost";
   disko.devices.disk.main.device = disk;
   networking.hostId = "00000000";
   services.openssh.ports = import ./values/ssh-port.nix;
