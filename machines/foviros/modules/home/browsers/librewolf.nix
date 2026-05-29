@@ -59,6 +59,7 @@
             "{d7742d87-e61d-4b78-b8a1-b469842139fa}" # Vimium
           ];
           privateIds = [
+            "dont-track-me-google@robwu.nl" # Don't track me Google
             "uBlock0@raymondhill.net" # uBlock Origin
             "wappalyzer@crunchlabz.com" # Wappalyzer - Technology profiler
             "{036a55b4-5e72-4d05-a06c-cba2dfcc134a}" # TWP - Translate Web Pages
