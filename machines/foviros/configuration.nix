@@ -7,7 +7,7 @@
     (import ../../modules/optional/desktop/sway {inherit username;})
     (import ./modules {inherit username;})
     ../../modules/optional/boot-loader/systemd-boot.nix
-    ../../modules/optional/kernels/zen.nix
+    ../../modules/optional/kernels/xanmod.nix
     ../../modules/optional/virtualisation/podman.nix
     ../../modules/optional/virtualisation/qemu.nix
     ../../modules/shared

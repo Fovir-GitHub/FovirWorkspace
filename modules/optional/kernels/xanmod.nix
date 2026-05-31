@@ -4,7 +4,7 @@
   ...
 }: {
   boot = {
-    kernelPackages = pkgs.linuxPackages_xanmod_stable;
-    zfs.package = lib.mkForce pkgs.zfs_unstable;
+    kernelPackages = pkgs.linuxPackages_xanmod;
+    zfs.package = lib.mkForce pkgs.zfs;
   };
 }
