@@ -8,6 +8,7 @@
     (_final: prev: {
       stable = import inputs.nixpkgs-stable {system = prev.system;};
       stable2505 = import inputs.nixpkgs-25-05 {system = prev.system;};
+      unstable = import inputs.nixpkgs-unstable {system = prev.system;};
     })
     inputs.nix-vscode-extensions.overlays.default
   ];
